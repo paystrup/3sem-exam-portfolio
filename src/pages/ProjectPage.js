@@ -36,16 +36,16 @@ export default function PostPage() {
                     <div className="projectPageBoxRightLower">
                         <div className="ppDetails">
                             <h6>CLIENT</h6>
-                            <p>Insert client here{/*{post.acf.client}*/}</p>
+                            <p>{post.acf?.client}</p>
                             
                         </div>
                         <div className="ppDetails">
                             <h6>SERVICE</h6>
-                            <p>Insert service here{/*{post.acf.service}*/}</p>
+                            <p>{post.acf?.service}</p>
                         </div>
                         <div className="ppDetails">
                             <h6>DATE</h6>
-                             <p>Insert date here {/*{post.acf.date}*/}</p> 
+                             <p>{post.acf?.date}</p> 
                         </div>
                     </div>
                 </article>
@@ -55,8 +55,10 @@ export default function PostPage() {
             </figure>
             <div className="projectIntro">
                 <h6>ABOUT THE PROJECT</h6>
-                {post.content && parse(post.content.rendered)}
-                
+                <p>{post.acf?.intro}</p>
+            </div>
+            <div className="projectEmbed">
+                <img src={post.acf?.image1} alt={post.acf?.title}></img>
             </div>
         </section>
     );

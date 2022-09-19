@@ -279,28 +279,19 @@ nav ul a:hover{
 }
 
 /* ------------------- landingpage ------------------------------------*/
-.landingPage h1{
-  font-family: 'Druk Wide';
-  font-size: 2rem;
-  line-height: 1.15;
-  padding-bottom: 1rem;
-}
-
 .landingPage h3{
   font-size: 1.8rem;
 }
 
 .landingPage{
   padding-top: 10rem;
-  padding-left: 5rem;
-  padding-right: 5rem;
+  padding-bottom: 10rem;
   background-color: white;
-  height: 100vh;
+  height: 110vh;
 }
 
 .landingContainer{
   padding-top: 5rem;
-  padding-bottom: 6rem;
   height: 100%;
   width: 100%;
   display: flex;
@@ -308,9 +299,37 @@ nav ul a:hover{
   justify-content: space-between;
 }
 
+.landingBoxUpper h4{
+  font-size: 1.8rem;
+  font-weight: 500;
+  padding-left: 10rem;
+  padding-right: 8rem;
+  max-width: 45ch;
+}
+
+.landingBoxUpper p{
+  font-size: 1rem;
+  padding-top: 3rem;
+  padding-left: 10rem;
+  padding-right: 8rem;
+}
+
+
+.landingBoxUpper{
+  transform: translateY(50px);
+  opacity: 0;
+}
+
+.marqueeLanding{
+  transform: translateY(100px);
+  opacity: 0;
+}
+
 .landingBoxLower{
   display: flex;
   justify-content: space-between;
+  padding-left: 8rem;
+  padding-right: 8rem;
 }
 
 /*--------------------- footer ---------------------*/
@@ -667,9 +686,36 @@ footer h3{
   display: flex;
   flex-direction: column;
   gap: 0.7rem;
+}
 
+/* ------------------- big text marquee component ---------------------*/
+.bigTextContainer{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 3rem;
+  padding-left: 3rem;
+}
 
+.bigTextContainer img{
+  height: 3rem;
+  animation: spin 5s linear infinite;
+}
 
+@keyframes spin {
+  from { 
+    transform: rotate(0deg);
+  }
+  to { 
+    transform: rotate(360deg);
+  }
+}
+
+.bigTextContainer h1{
+  font-size: 13rem;
+  font-family: 'Manrope', sans-serif;
+  font-weight: 400;
+  letter-spacing: -0.6rem;
 }
 
 /* ------------------ RESPONSIVE BREAKPOINTS -------------------------*/
