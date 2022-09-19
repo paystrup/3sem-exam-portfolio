@@ -1,0 +1,780 @@
+/* ---------- css reset / scroll settings ---------- */
+*{
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+}
+
+html{
+  scroll-behavior: smooth;
+}
+
+/* ---------- root variables ---------- */
+:root {
+  --green: rgb(38, 76, 89);
+  --dark: #1c1d20;
+  --grey: rgba(28, 29, 32, 0.175);
+}
+
+/* --------- scrollbar ----------- */
+::-webkit-scrollbar {
+  width: 7px;
+}
+
+::-webkit-scrollbar-track {
+  background: rgb(221, 221, 221); 
+}
+
+::-webkit-scrollbar-thumb {
+  background: rgb(34, 34, 34);
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #555;
+}
+
+/* ------------------ fonts -----------------------*/
+
+@font-face {
+  font-family: 'Monument Extended Regular';
+  src: local('Monument Extended Regular'), local('MONUMENTEXTENDED-REGULAR'),
+      url('./components/assets/fonts/otf/MONUMENTEXTENDED-REGULAR.OTF') format('truetype');
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Manrope';
+  src: local('Manrope ExtraBold'), local('Manrope-ExtraBold'),
+      url('./components/assets/fonts/ttf/Manrope-ExtraBold.ttf') format('truetype');
+  font-weight: bold;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Manrope';
+  src: local('Manrope Bold'), local('Manrope-Bold'),
+      url('./components/assets/fonts/ttf/Manrope-Bold.ttf') format('truetype');
+  font-weight: bold;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Manrope';
+  src: local('Manrope ExtraLight'), local('Manrope-ExtraLight'),
+      url('./components/assets/fonts/ttf/Manrope-ExtraLight.ttf') format('truetype');
+  font-weight: 200;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Manrope';
+  src: local('Manrope Light'), local('Manrope-Light'),
+      url('./components/assets/fonts/ttf/Manrope-Light.ttf') format('truetype');
+  font-weight: 300;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Manrope';
+  src: local('Manrope Medium'), local('Manrope-Medium'),
+      url('./components/assets/fonts/ttf/Manrope-Medium.ttf') format('truetype');
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Manrope';
+  src: local('Manrope Regular'), local('Manrope-Regular'),
+      url('./components/assets/fonts/ttf/Manrope-Regular.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Manrope';
+  src: local('Manrope SemiBold'), local('Manrope-SemiBold'),
+      url('./components/assets/fonts/ttf/Manrope-SemiBold.ttf') format('truetype');
+  font-weight: 600;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Druk Wide';
+  src: url('./components/assets/fonts/ttf/DrukWide-Bold.ttf') format('truetype');
+  font-weight: bold;
+  font-style: normal;
+  font-display: swap;
+}
+
+/*--------- global settings --------*/
+h1, h2, h3, h4, h5, h6{
+  font-family: 'Manrope', sans-serif;
+  font-weight: 600;
+}
+
+h1{
+  font-size: 3rem;
+}
+
+p{
+  font-family: 'Manrope Medium', sans-serif;
+  font-weight: 500;
+  color: var(--dark);
+}
+
+a{
+  font-family: 'Manrope', sans-serif;
+}
+
+/*------------- navbar ---------------- */
+nav{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: var(--dark);
+  padding-top: 1.5rem;
+  padding-left: 4rem;
+  padding-right: 4rem;
+  padding-bottom: 1.5rem;
+  font-family: 'Manrope', sans-serif;
+  font-weight: 600;
+  font-size: 1.1rem;
+  font-size: 16px;
+  z-index: 99999;
+  width: 100%;
+  position: fixed;
+  background-color: white;
+}
+
+nav button{
+  background-color: var(--dark);
+  border-radius: 25px;
+  padding: 10px 30px 10px 30px;
+  color: white;
+  font-family: 'Manrope', sans-serif;
+  font-weight: 500;
+  font-size: 16px;
+  border: none;
+}
+
+nav button:hover{
+  cursor: pointer;
+  background-color: white;
+  color: var(--dark);
+  opacity: 0.7;
+  transition: 0.5s ease-in-out;
+}
+
+nav img{
+  width: 80px;
+}
+
+nav img:hover{
+  opacity: 0.5;
+}
+
+.menuLinksMobile{
+  height: 100vh;
+  width: 100%;
+  background-color: white;
+  top: 8rem;
+  left: 0;
+  position: absolute;
+  z-index: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.menuLinksMobile ul{
+  flex-direction: column;
+  font-size: 50px;
+}
+
+.navLogoContainer{
+  max-width: 50%;
+  transform: translateY(30px);
+  opacity: 0;
+}
+
+.menuItems{
+  display: flex;
+}
+
+.menuContainerMobile{
+  display: none;
+}
+
+.menuLinks{
+  display: inline-flex;
+  transform: translateY(30px);
+  opacity: 0;
+}
+
+.menuContainerMobile svg{
+  height: 1.8rem;
+}
+
+.menuContainerMobile svg:hover{
+  cursor: pointer;
+  opacity: 0.3;
+  transition: 0.3s;
+}
+
+@keyframes shotup {
+  0% {
+    transform: translateY(300%) ;
+    opacity: 0;
+  }
+  90% {
+    transform: translateY(-50px);
+  }
+  100% {
+    transform: translateY(0%) ;
+    opacity: 1;
+  }
+}
+
+nav ul{
+  list-style-type: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 4rem;
+}
+
+nav ul a{
+  text-decoration: none;
+  color: var(--dark);
+}
+
+nav ul a:hover{
+  opacity: 0.2;
+  transition: 0.3s ease;
+}
+
+.page{
+  font-family: 'Manrope', sans-serif;
+  background-color: black;
+  padding-left: 15rem;
+  padding-right: 15rem;
+  color: white;
+}
+
+.active {
+  color: #c2c2c2;
+}
+
+/* ------------------- landingpage ------------------------------------*/
+.landingPage h1{
+  font-family: 'Druk Wide';
+  font-size: 2rem;
+  line-height: 1.15;
+  padding-bottom: 1rem;
+}
+
+.landingPage h3{
+  font-size: 1.8rem;
+}
+
+.landingPage{
+  padding-top: 10rem;
+  padding-left: 5rem;
+  padding-right: 5rem;
+  background-color: white;
+  height: 100vh;
+}
+
+.landingContainer{
+  padding-top: 5rem;
+  padding-bottom: 6rem;
+  height: 100%;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.landingBoxLower{
+  display: flex;
+  justify-content: space-between;
+}
+
+/*--------------------- footer ---------------------*/
+footer{
+  display: flex;
+  justify-content: space-between;
+  padding-top: 10rem;
+  padding-left: 10rem;
+  padding-right: 10rem;
+  padding-bottom: 25rem;
+  height: 50vh;
+}
+
+.footerRight{
+  display: flex;
+  gap: 13rem;
+}
+
+footer h2{
+  font-size: 3rem;
+  font-weight: 800;
+  line-height: 1.2;
+  text-underline-offset: 0.8rem;
+}
+
+footer h3{
+  font-weight: 800;
+  padding-bottom: 1.5rem;
+}
+
+.footerLinks{
+  font-family: 'Manrope';
+  font-weight: 500;
+  display: flex;
+  flex-direction: column;
+  gap: 0.3rem;
+  list-style-type: none;
+}
+
+.footerLinks a{
+  text-decoration: none;
+  color: black;
+}
+
+.footerLinks a span{
+  color: blue;
+}
+
+.footerLinks a:hover{
+  opacity: 0.5;
+  transition: 0.3s ease;
+}
+
+.stripe{
+  display: block;
+  width: 100%;
+  height: 1px;
+  background-color: var(--grey);
+}
+
+/* --------------- all project pages ---------------*/
+.allProjectsPage{
+  padding-top: 15rem;
+  padding-left: 8rem;
+  padding-right: 8rem;
+}
+
+.allProjectsPage h1{
+  font-family: 'Druk Wide';
+  font-size: 3.8rem;
+  max-width: 15ch;
+  text-align: center;
+  transform: translateY(30px);
+  opacity: 0;
+}
+
+.allProjectsPage p{
+  max-width: 75ch;
+  font-size: 20px;
+  transform: translateY(30px);
+  opacity: 0;
+}
+
+.allProjectsPageHeader{
+  text-align: center;
+  display: flex;
+  gap: 1.5rem;
+  flex-direction: column;
+  justify-self: center;
+  align-items: center;
+  padding-bottom: 8rem;
+}
+
+.grid-container{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  align-items: center;
+  gap: 5rem;
+  transform: translateY(120px);
+  opacity: 0;
+}
+
+.projectItem{
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  width: 45%;
+  padding-bottom: 3rem;
+}
+
+.projectItemText h2{
+  font-size: 2rem;
+  font-weight: 800;
+}
+
+.projectItemText h3{
+  font-size: 2rem;
+  font-weight: 400;
+  color: rgb(107, 107, 107);
+}
+
+.projectItemText p{
+  font-size: 1.1rem;
+}
+
+.projectItemText{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  gap: 1rem;
+}
+
+.projectItem:hover{
+  cursor: pointer;
+}
+
+.projectItem img{
+  max-width: 100%;
+  height: auto;
+  border-radius: 25px;
+}
+
+.projectItem img:hover{
+  opacity: 0.5;
+  transition: 1s ease-in-out;
+}
+
+.projectItemDate{
+  display: flex;
+  justify-content: space-between;
+}
+
+/* -------------- project pages -------------------*/
+.projectPageBoxLeft{
+  width: 25%;
+}
+
+.projectPageBoxRight{
+  display: flex;
+  flex-direction: column;
+  gap: 5rem;
+}
+
+.projectPage h2{
+  font-family: 'Druk Wide', sans-serif;
+  font-size: 3.8rem;
+}
+
+.projectPage h4{
+  font-family: 'Druk Wide', sans-serif;
+}
+
+.projectPageBoxRightLower{
+  display: flex;
+  justify-content: space-between;
+}
+
+.projectPage p{
+  font-weight: 200;
+  font-size: 1.1rem;
+}
+
+.projectPage h6{
+  font-weight: bolder;
+  font-size: 1.1rem;
+}
+
+.ppDetails{
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.projectPageHeader{
+  display: flex;
+  justify-content: center;
+  padding-left: 18rem;
+  padding-right: 18rem;
+  padding-top: 15rem;
+}
+
+.projectHeaderPic{
+  padding-left: 5rem;
+  padding-right: 5rem;
+  padding-top: 8rem;
+  padding-bottom: 9rem;
+}
+
+.projectHeaderPic img{
+  border-radius: 40px;
+  max-width: 100%;
+}
+
+.projectIntro{
+  padding-left: 30rem;
+  padding-right: 30rem;
+  padding-bottom: 9rem;
+}
+
+.projectIntro p{
+  line-height: 1.5;
+}
+
+.projectEmbed{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-bottom: 9rem;
+}
+
+/* ------------- testimonials ------------------- */
+.testimonials2{
+  padding-left: 0rem;
+  padding-right: 0rem;
+  padding-top: 13rem;
+  padding-bottom: 13rem;
+  display: flex;
+  flex-direction: column;
+  gap: 10rem;
+  justify-content: center;
+  background-color: #0A0A0A;
+}
+
+.testimonials2 i{
+  fill: white;
+  color: white;
+}
+
+.testimonialsHeader a{
+  font-family: 'Manrope', sans-serif;
+  font-size: 1.2rem;
+  text-underline-offset: 0.4rem;
+  color: white;
+}
+
+.testimonialsHeader{
+  display: flex;
+  justify-content: space-between;
+  font-size: 1.5rem;
+  color: white;
+  padding-left: 10rem;
+  padding-right: 10rem;
+}
+
+.testimonialsHeaderText{
+  transform: translateY(100px);
+  opacity: 0;
+}
+
+.testimonialsHeaderLink:hover{
+  opacity: 0.5;
+}
+
+.testimonialsHeaderLink{
+  transform: translateY(100px);
+  opacity: 0;
+}
+
+.trigger{
+  opacity: 0;
+}
+
+.testimonialsHeader span{
+  font-weight: 300;
+}
+
+.logoRow{
+  display: flex;
+  width: 100%;
+  gap: 5rem;
+  padding-left: 5rem;
+}
+
+.singleLogo{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 260px;
+  height: 260px;
+  border: solid 0.5px rgb(146, 146, 146);
+}
+
+.singleLogoInner{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100px;
+  height: 100px;
+}
+
+.logoRow img{
+  height: 100%;
+  width: 100%;
+}
+
+/* ------------------ about me page --------------------------- */
+.aboutPage{
+  display: flex;
+  flex-direction: column;
+  gap: 5rem;
+  padding-left: 10rem;
+  padding-right: 10rem;
+  padding-top: 13rem;
+  padding-bottom: 10rem;
+}
+
+.aboutPage h2{
+  font-size: 3rem;
+  font-family: 'Druk Wide';
+}
+
+.skillsetBox{
+  display: flex;
+  gap: 8rem;
+}
+
+.skillsetItem{
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  line-height: 1.66;
+  width: 33%;
+}
+
+.skillsetItem h3{
+  font-size: 2rem;
+  font-weight: 500;
+}
+
+.skillsetBoxTop{
+  color: var(--grey);
+  opacity: 0.5;
+  display: flex;
+  flex-direction: column;
+  gap: 0.7rem;
+
+
+
+}
+
+/* ------------------ RESPONSIVE BREAKPOINTS -------------------------*/
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (max-width: 639px) {
+  .menuContainerMobile{
+    display: inline-flex;
+  }
+  
+  .menuLinks{
+    display: none;
+  }
+
+  /* --------testimonials -----------*/
+  .testimonials2{
+    padding-top: 8rem;
+    padding-bottom: 8rem;
+  }
+  
+  .testimonialsHeader a{
+    font-size: 1rem;
+  }
+  
+  .testimonialsHeader{
+    padding-left: 3rem;
+    padding-right: 3rem;
+  }
+
+  
+}
+
+@media only screen and (min-width: 640px) {
+  .menuContainerMobile{
+    display: inline-flex;
+  }
+  
+  .menuLinks{
+    display: none;
+  }
+
+  /* --------testimonials -----------*/
+  .testimonials2{
+    padding-top: 8rem;
+    padding-bottom: 8rem;
+  }
+  
+  .testimonialsHeader a{
+    font-size: 1rem;
+  }
+  
+  .testimonialsHeader{
+    padding-left: 3rem;
+    padding-right: 3rem;
+  }
+
+  
+}
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) {
+  .menuContainerMobile{
+    display: inline-flex;
+  }
+  
+  .menuLinks{
+    display: none;
+  }
+
+  /* --------testimonials -----------*/
+  .testimonials2{
+    padding-top: 8rem;
+    padding-bottom: 8rem;
+  }
+  
+  .testimonialsHeader a{
+    font-size: 1rem;
+  }
+  
+  .testimonialsHeader{
+    padding-left: 3rem;
+    padding-right: 3rem;
+  }
+} 
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 1024px) {
+  .menuContainerMobile{
+    display: none;
+  }
+
+  .menuLinksMobile{
+    display: none;
+  }
+  
+  .menuLinks{
+    display: inline-flex;
+  }
+} 
+
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (min-width: 1280px) {
+  .testimonialsHeader{
+    padding-left: 10rem;
+    padding-right: 10rem;
+  }
+
+}
+
