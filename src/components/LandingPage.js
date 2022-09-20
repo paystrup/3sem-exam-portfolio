@@ -24,7 +24,7 @@ export default function LandingPage() {
           .to(q(".landingVideo"), {
             y: 0,
             opacity: 1
-          });
+        });
     }, [q]);
 
     // ✨ big text marquee component on the landingpage

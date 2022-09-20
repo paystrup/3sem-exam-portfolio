@@ -288,7 +288,6 @@ nav ul a:hover{
   height: auto;
   transform: translateY(20px);
   opacity: 0;
-  z-index: -999;
 }
 
 .landingVideo video{
@@ -378,15 +377,26 @@ nav ul a:hover{
   color: white;
   padding-top: 12rem;
   padding-bottom: 12rem;
-  padding-left: 15rem;
-  padding-right: 15rem;
+  padding-left: 10rem;
+  padding-right: 10rem;
   
 }
 
 .aboutMeTeaser{
   display: flex;
   justify-content: space-between;
-  gap: 10rem;
+  gap: 12rem;
+}
+
+.aboutMeTeaserHeader{
+  display: flex;
+  flex-direction: column;
+  gap: 3rem;
+}
+
+.aboutMeTeaser svg{
+  height: 0.8rem;
+  padding-right: 0.5rem;
 }
 
 .aboutMeTeaser p{
@@ -394,12 +404,32 @@ nav ul a:hover{
   font-size: 1rem;
   line-height: 1.6;
   font-weight: 300;
+  max-width: 40ch;
 }
 .aboutMeTeaser h4{
   font-size: 2.6rem;
   font-weight: 400;
   line-height: 1.45;
 }
+
+/* ------------------- selectedWorks ---------------- */
+.sectionWide{
+  padding-bottom: 12rem;
+  padding-left: 10rem;
+  padding-right: 10rem;
+}
+
+.selectedWorks{
+  background-color: black;
+  color: white;
+}
+
+.selectedWorks h3{
+  font-family: 'Druk Wide', sans-serif;
+  font-size: 2.8rem;
+}
+
+
 
 /*--------------------- footer ---------------------*/
 footer{
@@ -660,8 +690,8 @@ footer h3{
   justify-content: space-between;
   font-size: 1.5rem;
   color: white;
-  padding-left: 10rem;
-  padding-right: 10rem;
+  padding-left: 15rem;
+  padding-right: 15rem;
 }
 
 .testimonialsHeaderText{
