@@ -31,7 +31,7 @@ export default function Testimonials() {
     }, []);
 
     return (
-        <section className="testimonials2">
+        <section id="testimonials" className="testimonials2">
             <div className="testimonialsHeader">
                 <h2 className="testimonialsHeaderText">
                     Clients I've worked with.

@@ -9,7 +9,6 @@ import ProjectsPage from './pages/ProjectsPage';
 import ProjectPage from './pages/ProjectPage';
 import ScrollToTop from './components/ScrollToTop';
 
-
 function App() {
   return (
     <main>

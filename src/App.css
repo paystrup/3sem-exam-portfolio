@@ -18,6 +18,7 @@ html{
   --green: rgb(38, 76, 89);
   --dark: #1c1d20;
   --grey: rgba(28, 29, 32, 0.175);
+  --darkgrey: rgb(180, 180, 180);
 }
 
 /* --------- scrollbar ----------- */
@@ -279,12 +280,27 @@ nav ul a:hover{
 }
 
 /* ------------------- landingpage ------------------------------------*/
+.landingVideo{
+  top: 0;
+  left: 0;
+  position: absolute;
+  width: 100%;
+  height: auto;
+  transform: translateY(20px);
+  opacity: 0;
+  z-index: -999;
+}
+
+.landingVideo video{
+  max-width: 100%;
+}
+
 .landingPage h3{
   font-size: 1.8rem;
 }
 
 .landingPage{
-  padding-top: 10rem;
+  padding-top: 7rem;
   padding-bottom: 10rem;
   background-color: white;
   height: 110vh;
@@ -300,20 +316,39 @@ nav ul a:hover{
 }
 
 .landingBoxUpper h4{
-  font-size: 1.8rem;
+  color: black;
+  font-size: 2rem;
   font-weight: 500;
   padding-left: 10rem;
   padding-right: 8rem;
   max-width: 45ch;
 }
 
-.landingBoxUpper p{
+.landingBoxUpper p, a{
+  text-decoration: none;
   font-size: 1rem;
+  color: var(--darkgrey);
+}
+
+
+.landingBoxUpper p, a:hover{
+  opacity: 0.5;
+  transition: 0.5s;
+}
+
+.landingCTA{
+  display: flex;
+  align-items: center;
   padding-top: 3rem;
   padding-left: 10rem;
   padding-right: 8rem;
+  gap: 0.8rem;
 }
 
+.landingCTA svg{
+  color: var(--darkgrey);
+  height: 1rem;
+}
 
 .landingBoxUpper{
   transform: translateY(50px);
@@ -321,8 +356,13 @@ nav ul a:hover{
 }
 
 .marqueeLanding{
+  color: black;
   transform: translateY(100px);
   opacity: 0;
+}
+
+.marqueeLanding img{
+  color: white;
 }
 
 .landingBoxLower{
@@ -330,6 +370,35 @@ nav ul a:hover{
   justify-content: space-between;
   padding-left: 8rem;
   padding-right: 8rem;
+}
+
+/* --------------------- about me teaser ----------------------*/
+.aboutMeTeaser{
+  background-color: black;
+  color: white;
+  padding-top: 12rem;
+  padding-bottom: 12rem;
+  padding-left: 15rem;
+  padding-right: 15rem;
+  
+}
+
+.aboutMeTeaser{
+  display: flex;
+  justify-content: space-between;
+  gap: 10rem;
+}
+
+.aboutMeTeaser p{
+  color: white;
+  font-size: 1rem;
+  line-height: 1.6;
+  font-weight: 300;
+}
+.aboutMeTeaser h4{
+  font-size: 2.6rem;
+  font-weight: 400;
+  line-height: 1.45;
 }
 
 /*--------------------- footer ---------------------*/
@@ -398,7 +467,7 @@ footer h3{
 }
 
 .allProjectsPage h1{
-  font-family: 'Druk Wide';
+  font-family: 'Druk Wide', sans-serif;
   font-size: 3.8rem;
   max-width: 15ch;
   text-align: center;
@@ -650,16 +719,21 @@ footer h3{
 .aboutPage{
   display: flex;
   flex-direction: column;
-  gap: 5rem;
   padding-left: 10rem;
   padding-right: 10rem;
   padding-top: 13rem;
   padding-bottom: 10rem;
 }
 
+.aboutSkills{
+  display: flex;
+  flex-direction: column;
+  gap: 5rem;
+}
+
 .aboutPage h2{
   font-size: 3rem;
-  font-family: 'Druk Wide';
+  font-family: 'Druk Wide', sans-serif;
 }
 
 .skillsetBox{
@@ -675,7 +749,7 @@ footer h3{
   width: 33%;
 }
 
-.skillsetItem h3{
+.aboutPage h3{
   font-size: 2rem;
   font-weight: 500;
 }
