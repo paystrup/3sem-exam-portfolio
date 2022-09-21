@@ -1,9 +1,10 @@
 // 📁 pages/AboutPage.js
-
+import AboutPageHeader from "../components/AboutPageHeader";
 
 export default function AboutPage() {
     return (
         <section className="aboutPage">
+            <AboutPageHeader />
             <div className="aboutSkills">
                 <h2>I CAN HELP YOU WITH ...</h2>
                 <div className="skillsetBox">

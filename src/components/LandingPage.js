@@ -39,7 +39,7 @@ export default function LandingPage() {
             </div>
             <div className="landingContainer">
                 <div className="landingBoxUpper">
-                    <h4>Digital artist and sound designer from Aarhus, Denmark. Currently studying Multimedia Design.</h4>
+                    <h4>Digital artist and sound designer from Aarhus, Denmark. Currently studying Multimedia Design, specializing in Frontend Development.</h4>
                     <div className="landingCTA">
                         <ArrowDownRightIcon/>
                         <a href="/#testimonials">Explore my portfolio below </a>

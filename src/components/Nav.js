@@ -5,9 +5,8 @@ import { useState, useEffect, useRef } from "react";
 import { gsap } from "gsap";
 
 export default function Navigation() {
-
     const [nav, setNav] = useState(false);
-    
+
     // gsap animations, ref to objects 📌
     const logoRef = useRef(); // navbar logo
     const navLinksRef = useRef(); // navbar links

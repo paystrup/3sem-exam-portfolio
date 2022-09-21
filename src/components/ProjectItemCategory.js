@@ -1,6 +1,10 @@
 import { useNavigate } from "react-router-dom";
+import { gsap } from "gsap";
+import { useEffect, useRef } from "react";
 
 export default function ProjectItem({ project }) {
+    const elRef = useRef();
+    const elTween = useRef();
     const navigate = useNavigate();
 
     // 🔙 Fallback image, if no embedded img is found
@@ -11,13 +15,41 @@ export default function ProjectItem({ project }) {
         image = project.acf?.squarecover;
     }
 
-    // props imported from fetch via -> ./pages/ProjectsPage.js
+    useEffect(() => {            
+        elTween.current = gsap.to(elRef.current, {
+            borderRadius: "50%",
+            opacity: 0.7,
+            duration: 0.4,
+            ease: "Expo.easeIn",
+            filter: 'grayscale(100%)',
+            paused: true
+        });
+    }, []);
+
+    const onMouseEnterHandler = () => {
+        elTween.current.play();
+    };
+
+    const onMouseLeaveHandler = () => {
+        elTween.current.reverse();
+    };
+
+    // props imported from fetch via -> ./components/CategoryFetchPost.js
     return (
-        <article className="projectItem" onClick={() => navigate("/projects/" + project.slug)}>
-            <img src={image} alt={project.title.rendered} />
+        <article 
+            className="projectItemCategory"
+            onMouseEnter={onMouseEnterHandler}
+            onMouseLeave={onMouseLeaveHandler}
+            onClick={() => navigate("/projects/" + project.slug)}
+        >
+            <div className="categoryImage"></div>
+            <img ref={elRef} src={image} alt={project.title.rendered} className="categoryImage"/>
             <div className="projectItemText">
                 <h2>{project.acf?.case}</h2>
                 <h3>{project.acf?.date}</h3>
+            </div>
+            <div className="categoryTeaser">
+                <h3>{project.acf?.teaser}</h3>
             </div>
         </article>
     );
