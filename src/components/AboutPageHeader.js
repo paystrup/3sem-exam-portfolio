@@ -18,7 +18,7 @@ export default function AboutPageHeader() {
 
                     <br></br>
                     <br></br>
-                    As a person I have a need, a passion, to be creative, to create, to let my ideas flow - wherever it's through art, music, graphic design or coding. I'm always learning, always developing my skills.
+                    As a person I have a need, a passion, to be creative, to create, to let my ideas flow - wherever it's through art, music, graphic design or coding. I'm always learning, always exploring, always developing my skills.
 
 
                 </p>

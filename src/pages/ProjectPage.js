@@ -58,7 +58,7 @@ export default function PostPage() {
                 <p>{post.acf?.intro}</p>
             </div>
             <div className="projectEmbed">
-                <img src={post.acf?.image1} alt={post.acf?.title}></img>
+                {post.acf?.test ? post.acf?.test : ""}
             </div>
         </section>
     );

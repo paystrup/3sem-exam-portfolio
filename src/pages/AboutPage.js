@@ -36,8 +36,41 @@ export default function AboutPage() {
                     </div>
                 </div>
             </div>
+            <div className="aboutExperience">
+                <div>
+                    <h2>EXPERIENCE</h2>
+                </div>
 
+                <div className="experienceCol">
+                    <div className="experienceRow">
+                        <div className="experienceRowContainer">
+                            <h4>Graphic Design & 3D</h4>
+                        </div>
+                        <div>
+                            <p>Adobe CC, Illustrator, Photoshop, InDesign, After Effects, XD - Blender, Octane Render, Marvelous Designer, DAZ 3D, Substance Painter</p>
+                        </div>
+                    </div>
+                    <div className="experienceRow">
+                        <div className="experienceRowContainer">
+                            <h4>Programming</h4>
+                        </div>
+                        <div>
+                            <p>CSS, HTML, JavaScript, React, JSON, GSAP, GitHub</p>
+                        </div>
+                    </div>
+                    <div className="experienceRow">
+                        <div className="experienceRowContainer">
+                            <h4>Sound</h4>
+                        </div>
+                        <div>
+                            <p>Ableton Live, Protools, FL Studio, Logic Pro</p>
+                        </div>
+                    </div>
+                    
+                </div>
+            </div>
         </section>
+        
         
     );
 }
