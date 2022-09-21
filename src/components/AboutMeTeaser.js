@@ -36,7 +36,7 @@ export default function AboutMeTeaser() {
             <div className="aboutMeTeaserHeader"> 
                 <h4>I design and build solid user-centered experiences that help brands grow and stand out in both the digital and analog world.</h4>
                 <Link to="/about">
-                    <ArrowUpRightIcon/>Read more about me
+                    <ArrowUpRightIcon/>READ MORE ABOUT ME
                 </Link>
             </div>
             <div className="aboutMeTeaserLower">

@@ -15,7 +15,7 @@ export default function CategoryFetchPost( { categoryID }) {
     }, [categoryID]);
 
     return (
-        <section>   
+        <section>
             <section className="categoryGrid">
                 {projects.map(project => (
                     <ProjectItemCategory key={project.id} project={project} />

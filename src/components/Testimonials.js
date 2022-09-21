@@ -39,7 +39,7 @@ export default function Testimonials() {
                     <span>Are you next?</span>
                 </h2>
                 <a className="testimonialsHeaderLink" href="/projects">
-                    See more work
+                    SEE MORE WORK
                 </a>
             </div>
             <TestimonialsRow id="trigger"/>

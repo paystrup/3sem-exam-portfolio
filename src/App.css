@@ -445,13 +445,71 @@ nav ul a:hover{
 /* ------------------- selectedWorks ---------------- */
 .sectionWide{
   padding-bottom: 12rem;
-  padding-left: 4rem;
-  padding-right: 4rem;
+  padding-left: 10rem;
+  padding-right: 10rem;
 }
 
 .selectedWorks{
   background-color: black;
   color: white;
+}
+
+.selectedWorksGrid{
+  transform: translateY(100px);
+  opacity: 0;
+}
+
+.selectedButtons button:focus{
+  outline: solid 2px white;
+  color: white;
+  transition: 0.5s ease;
+}
+
+.selectedButtons{
+  font-family: 'Manrope', sans-serif;
+  display: flex;
+  gap: 1rem;
+  padding-bottom: 2rem;
+}
+
+.selectedHeader{
+  display: flex;
+  justify-content: space-between;
+  transform: translateY(50px);
+  opacity: 0;
+}
+
+.selectedHeader a{
+  display: flex;
+  justify-self: start;
+  align-items: center;
+  font-size: 2rem;
+}
+
+.selectedHeader svg{
+    height: 2rem;
+    padding-right: 0.5rem;
+}
+
+.selectedButtons button:hover{
+  cursor: pointer;
+  outline: solid 2px white;
+  color: white;
+  transition: 0.5s ease;
+}
+
+.selectedButtons button{
+  color: rgb(104, 104, 104);
+  font-size: 1rem;
+  font-weight: 400;
+  outline: solid 2px rgb(104, 104, 104);
+  background-color: black;
+  padding-left: 2rem;
+  padding-right: 2rem;
+  padding-top: 0.7rem;
+  padding-bottom: 0.7rem;
+  border-radius: 25px;
+  transition: 0.7s ease;
 }
 
 /*--------------------- footer ---------------------*/
@@ -685,15 +743,12 @@ footer h3{
 
 /* ------------- testimonials ------------------- */
 .testimonials2{
-  padding-left: 0rem;
-  padding-right: 0rem;
-  padding-top: 13rem;
   padding-bottom: 13rem;
   display: flex;
   flex-direction: column;
   gap: 10rem;
   justify-content: center;
-  background-color: #0A0A0A;
+  background-color: black;
 }
 
 .testimonials2 i{
@@ -963,7 +1018,6 @@ footer h3{
 
   /* --------testimonials -----------*/
   .testimonials2{
-    padding-top: 8rem;
     padding-bottom: 8rem;
   }
   
@@ -990,7 +1044,6 @@ footer h3{
 
   /* --------testimonials -----------*/
   .testimonials2{
-    padding-top: 8rem;
     padding-bottom: 8rem;
   }
   
@@ -1018,7 +1071,6 @@ footer h3{
 
   /* --------testimonials -----------*/
   .testimonials2{
-    padding-top: 8rem;
     padding-bottom: 8rem;
   }
   
