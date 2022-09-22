@@ -70,6 +70,12 @@ export default function PostPage() {
             
             </div>) 
             : ""}
+
+            {post.acf?.section1img ? 
+            (<div className="sectionImage">
+                <img src={post.acf?.section1img?.url} alt={post.acf?.section1img?.alt}></img>
+            </div>) 
+            : ""}
             
             {post.acf?.gallery?.url ?
             (<div className="projectGallery">
