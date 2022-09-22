@@ -1,6 +1,7 @@
 import { useState, useEffect } from "react";
 import { useParams } from "react-router-dom";
 import parse from "html-react-parser";
+import { InstagramEmbed } from 'react-social-media-embed';
 
 export default function PostPage() {
     const [post, setPost] = useState({});
@@ -57,6 +58,12 @@ export default function PostPage() {
                 <h6>ABOUT THE PROJECT</h6>
                 <div dangerouslySetInnerHTML={{ __html: post.acf?.intro}}></div>
             </div>
+
+            {post.acf?.instaembed ? 
+            (<div className="projectEmbed">
+                <InstagramEmbed url={post.acf?.instaembed} width={1000} />
+            </div>) 
+            : ""}
             
             {post.acf?.embed ? 
             (<div className="projectEmbed" dangerouslySetInnerHTML={{ __html: post.acf?.embed}}>
