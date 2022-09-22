@@ -55,11 +55,26 @@ export default function PostPage() {
             </figure>
             <div className="projectIntro">
                 <h6>ABOUT THE PROJECT</h6>
-                <p>{post.acf?.intro}</p>
+                <div dangerouslySetInnerHTML={{ __html: post.acf?.intro}}></div>
             </div>
-            <div className="projectEmbed">
-                {post.acf?.test ? post.acf?.test : ""}
-            </div>
+            
+            {post.acf?.embed ? 
+            (<div className="projectEmbed" dangerouslySetInnerHTML={{ __html: post.acf?.embed}}>
+            
+            </div>) 
+            : ""}
+            
+            {post.acf?.gallery?.url ?
+            (<div className="projectGallery">
+                <img src={post.acf?.gallery.url} alt={post.acf?.gallery.alt}></img>
+                <img src={post.acf?.gallery2.url} alt={post.title?.rendered}></img>
+                <img src={post.acf?.gallery3.url} alt={post.title?.rendered}></img>
+                <img src={post.acf?.gallery4.url} alt={post.title?.rendered}></img>
+                <img src={post.acf?.gallery5.url} alt={post.title?.rendered}></img>
+            </div>)
+            : ""}
+
+            
         </section>
     );
 }

@@ -455,7 +455,7 @@ nav ul a:hover{
 }
 
 .selectedWorksGrid{
-  transform: translateY(100px);
+  transform: translateY(150px);
   opacity: 0;
 }
 
@@ -731,7 +731,17 @@ footer h3{
 }
 
 .projectIntro p{
-  line-height: 1.5;
+  padding-top: 1.5rem;
+  line-height: 1.66;
+}
+
+.projectIntro a{
+  font-family: 'Manrope', sans-serif;
+  text-decoration: underline;
+  font-weight: 600;
+  font-size: 1.1rem;
+  color: var(--darkgrey);
+  text-underline-offset: 0.2rem;
 }
 
 .projectEmbed{
@@ -739,6 +749,19 @@ footer h3{
   justify-content: center;
   align-items: center;
   padding-bottom: 9rem;
+}
+
+.projectGallery{
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 2%;
+}
+
+.projectGallery img{
+  width: 100%;
 }
 
 /* ------------- testimonials ------------------- */
@@ -1107,4 +1130,3 @@ footer h3{
   }
 
 }
-
