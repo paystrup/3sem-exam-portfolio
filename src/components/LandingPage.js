@@ -35,7 +35,7 @@ export default function LandingPage() {
     return (
         <section className="landingPage" ref={el}>
             <div className="landingVideo">
-                <video src={LandingVideo} type="video/mp4" autoPlay muted loop></video>
+                {/* <video src={LandingVideo} type="video/mp4" autoPlay muted loop></video> */}
             </div>
             <div className="landingContainer">
                 <div className="landingBoxUpper">

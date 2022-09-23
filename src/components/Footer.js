@@ -1,11 +1,12 @@
 import { NavLink } from "react-router-dom";
+import { ArrowLongRightIcon } from '@heroicons/react/24/solid'
 
 export default function Footer() {
     return (
         <footer>
-            <div>
-                <h2>Let's work together.</h2>
-                <h2><u>Get in touch</u></h2>
+            <div className="footerCTA">
+                <h2>Let's work — together.</h2>
+                <h2><a href="mailto:hello@paystrup.dk"><ArrowLongRightIcon />Get in touch</a></h2>
             </div>
             <div className="footerRight">
                 <div>

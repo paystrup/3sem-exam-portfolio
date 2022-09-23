@@ -26,7 +26,7 @@ export default function SelectedWorks() {
         {
             id: "2",
             categoryID: "9",
-            title: 'SCHOOL'
+            title: 'EXAMS'
         },
         {
             id: "3",
@@ -36,7 +36,7 @@ export default function SelectedWorks() {
         {
             id: "4",
             categoryID: "8",
-            title: 'MUSIC'
+            title: 'SOUND'
         },
         {
             id: "5",

@@ -76,6 +76,12 @@ export default function PostPage() {
                 <img src={post.acf?.section1img?.url} alt={post.acf?.section1img?.alt}></img>
             </div>) 
             : ""}
+
+            {post.acf?.section1 ? 
+            (<div className="projectIntro">
+                <div dangerouslySetInnerHTML={{ __html: post.acf?.section1}}></div>
+            </div>) 
+            : ""}
             
             {post.acf?.gallery?.url ?
             (<div className="projectGallery">
@@ -85,6 +91,31 @@ export default function PostPage() {
                 <img src={post.acf?.gallery4.url} alt={post.title?.rendered}></img>
                 <img src={post.acf?.gallery5.url} alt={post.title?.rendered}></img>
             </div>)
+            : ""}
+
+            {post.acf?.section2img ? 
+            (<div className="sectionImage">
+                <img src={post.acf?.section2img?.url} alt={post.acf?.section2img?.alt}></img>
+            </div>) 
+            : ""}
+
+            {post.acf?.section2 ? 
+            (<div className="projectIntro">
+                <div dangerouslySetInnerHTML={{ __html: post.acf?.section2}}></div>
+            </div>) 
+            : ""}
+
+            {post.acf?.section3img ? 
+            (<div className="sectionImage">
+                <img src={post.acf?.section3img?.url} alt={post.acf?.section3img?.alt}></img>
+            </div>) 
+            : ""}
+
+            
+            {post.acf?.section3 ? 
+            (<div className="projectIntro">
+                <div dangerouslySetInnerHTML={{ __html: post.acf?.section3}}></div>
+            </div>) 
             : ""}
 
             

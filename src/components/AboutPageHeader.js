@@ -3,7 +3,7 @@ import headerImage from "../components/assets/personal3.png"
 export default function AboutPageHeader() {
     return (
         <section className="aboutPageHeader">
-            <img src={headerImage} alt="Nikolaj Pejstrup / Paystrup sitting in his home studio producing music"></img>
+            
             <div>
                 <p>
                     I'm Nikolaj Pejstrup, also known by my artist name Paystrup - an homage to my american side of the family. I'm a Danish Multimedia Design student at Business Academy Aarhus, currently specializing in Frontend Development. 
@@ -19,10 +19,9 @@ export default function AboutPageHeader() {
                     <br></br>
                     <br></br>
                     As a person I have a need, a passion, to be creative, to create, to let my ideas flow - wherever it's through art, music, graphic design or coding. I'm always learning, always exploring, always developing my skills.
-
-
                 </p>
             </div>
+            <img src={headerImage} alt="Nikolaj Pejstrup / Paystrup sitting in his home studio producing music"></img>
         </section>
     );
 }
