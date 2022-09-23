@@ -2,6 +2,7 @@ import { useState, useEffect } from "react";
 import { useParams } from "react-router-dom";
 import parse from "html-react-parser";
 import { InstagramEmbed } from 'react-social-media-embed';
+import ScrollTopButton from "../components/ScrollTopButton";
 
 export default function PostPage() {
     const [post, setPost] = useState({});
@@ -26,8 +27,12 @@ export default function PostPage() {
         image = post._embedded["wp:featuredmedia"][0].source_url;
     }
 
+
+    // Messy code below, I know, I'm sorry. Without ACF pro it's not possbile to array images
+    // -> a lot of custom keys 😥
     return (
         <section className="projectPage">
+            <ScrollTopButton />
             <section className="projectPageHeader">
                 <div className="projectPageBoxLeft">
                     <h4>CASE</h4>
@@ -165,6 +170,40 @@ export default function PostPage() {
                 <img src={post.acf?.section6grid4?.url} alt={post.acf?.section6grid4?.alt}></img>
             </div>) 
             : ""}
+
+            {post.acf?.section5 ? 
+            (<div className="projectIntro">
+                <div dangerouslySetInnerHTML={{ __html: post.acf?.section5}}></div>
+            </div>) 
+            : ""}
+
+            {post.acf?.jollyvid ? 
+            (<div className="sectionImage">
+                <video loop autoPlay muted>
+                    <source src={post.acf?.jollyvid?.url} type="video/webm" />
+                </video>
+            </div>) 
+            : ""}
+
+            {post.acf?.section6 ? 
+            (<div className="projectIntro">
+                <div dangerouslySetInnerHTML={{ __html: post.acf?.section6}}></div>
+            </div>) 
+            : ""}
+
+            {post.acf?.section7img ? 
+            (<div className="sectionImage">
+                <img src={post.acf?.section7img?.url} alt={post.acf?.section7img?.alt}></img>
+            </div>) 
+            : ""}
+
+            {post.acf?.section7 ? 
+            (<div className="projectIntro">
+                <div dangerouslySetInnerHTML={{ __html: post.acf?.section7}}></div>
+            </div>) 
+            : ""}
+
+           
 
             
         </section>

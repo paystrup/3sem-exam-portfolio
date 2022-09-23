@@ -141,6 +141,37 @@ a{
 }
 
 /*------------- navbar ---------------- */
+.scrollToTop{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: 1s ease-in;
+}
+
+.scrollToTop button{
+  bottom: 0;
+  right: 0;
+  z-index: 999999999999;
+  position: fixed;
+  cursor: pointer;
+  margin: 2.5rem;
+  background-color: rgb(141, 141, 141);
+  border: none;
+  padding-left: 0.6rem;
+  padding-right: 0.6rem;
+  padding-top: 0.5rem;
+  padding-bottom: 0.5rem;
+  color: white;
+  display: inline-block;
+  text-decoration: none;
+  border-radius: 50%;
+  opacity: 0.5;
+}
+
+.scrollToTop svg{
+  height: 30px;
+}
+
 nav{
   display: flex;
   justify-content: space-between;
@@ -549,9 +580,6 @@ footer h3{
   list-style-type: none;
 }
 
-.footerCTA h2{
- 
-}
 .footerCTA svg{
   height: 3rem;
 }
@@ -814,6 +842,11 @@ footer h3{
   gap: 1rem;
 }
 
+.sectionImage video{
+  max-width: 100%;
+  border-radius: 40px;
+}
+
 .downloads a{
   text-decoration: none;
   color: black;
@@ -825,7 +858,6 @@ footer h3{
   padding-top: 0.7rem;
   padding-bottom: 0.7rem;
   border-radius: 25px;
-
 }
 
 .sectionGrid img{

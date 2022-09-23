@@ -1,6 +1,7 @@
 import { useState, useEffect, useRef } from "react";
 import ProjectItem from "../components/ProjectItem";
 import { gsap } from "gsap";
+import ScrollTopButton from "../components/ScrollTopButton";
 
 export default function ProjectsPage() {
     const el = useRef();
@@ -37,6 +38,7 @@ export default function ProjectsPage() {
     
     return (
         <section className="allProjectsPage" ref={el}>
+            <ScrollTopButton />
             <section className="allProjectsPageHeader">
                 <h1 className="projectsHeaderText">A DEEPER DIVE INTO MY PROJECTS</h1>
                 <p className="projectsHeaderP">The latest years I've helped my clients creating sustainable and unique solutions through combining the use of 3D, graphic design, motion graphics and sound design. Explore my projects below.</p>
