@@ -793,7 +793,7 @@ footer h3{
 
 .sectionImage img{
   width: 100%;
-  border-radius: 40px;
+  border-radius: 25px;
 }
 
 .sectionImage{
@@ -801,6 +801,35 @@ footer h3{
   padding-left: 5rem;
   padding-right: 5rem;
   padding-bottom: 9rem;
+}
+
+.sectionGrid{
+  display: flex;
+  justify-content: space-between;
+  max-width: 100%;
+}
+
+.downloads{
+  display: flex;
+  gap: 1rem;
+}
+
+.downloads a{
+  text-decoration: none;
+  color: black;
+  font-size: 1rem;
+  font-weight: 700;
+  outline: solid 2px rgb(104, 104, 104);
+  padding-left: 2rem;
+  padding-right: 2rem;
+  padding-top: 0.7rem;
+  padding-bottom: 0.7rem;
+  border-radius: 25px;
+
+}
+
+.sectionGrid img{
+  max-width: 23%;
 }
 
 /* ------------- testimonials ------------------- */

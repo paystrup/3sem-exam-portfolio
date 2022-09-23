@@ -59,6 +59,13 @@ export default function PostPage() {
                 <div dangerouslySetInnerHTML={{ __html: post.acf?.intro}}></div>
             </div>
 
+            {post.acf?.download ? 
+            (<div className="projectIntro downloads">
+                <div dangerouslySetInnerHTML={{ __html: post.acf?.download}}></div>
+                <div dangerouslySetInnerHTML={{ __html: post.acf?.download2}}></div>
+            </div>) 
+            : ""}
+
             {post.acf?.instaembed ? 
             (<div className="projectEmbed">
                 <InstagramEmbed url={post.acf?.instaembed} width={1000} />
@@ -110,11 +117,52 @@ export default function PostPage() {
                 <img src={post.acf?.section3img?.url} alt={post.acf?.section3img?.alt}></img>
             </div>) 
             : ""}
-
             
             {post.acf?.section3 ? 
             (<div className="projectIntro">
                 <div dangerouslySetInnerHTML={{ __html: post.acf?.section3}}></div>
+            </div>) 
+            : ""}
+
+            {post.acf?.section4img ? 
+            (<div className="sectionImage">
+                <img src={post.acf?.section4img?.url} alt={post.acf?.section4img?.alt}></img>
+            </div>) 
+            : ""}
+
+            {post.acf?.section4 ? 
+            (<div className="projectIntro">
+                <div dangerouslySetInnerHTML={{ __html: post.acf?.section4}}></div>
+            </div>) 
+            : ""}
+
+            {post.acf?.section5img ? 
+            (<div className="sectionImage">
+                <img src={post.acf?.section5img?.url} alt={post.acf?.section5img?.alt}></img>
+            </div>) 
+            : ""}
+
+            {post.acf?.section5grid1 ? 
+            (<div className="sectionImage sectionGrid">
+                <img src={post.acf?.section5grid1?.url} alt={post.acf?.section5grid1?.alt}></img>
+                <img src={post.acf?.section5grid2?.url} alt={post.acf?.section5grid2?.alt}></img>
+                <img src={post.acf?.section5grid3?.url} alt={post.acf?.section5grid3?.alt}></img>
+                <img src={post.acf?.section5grid4?.url} alt={post.acf?.section5grid4?.alt}></img>
+            </div>) 
+            : ""}
+
+            {post.acf?.section5img2 ? 
+            (<div className="sectionImage">
+                <img src={post.acf?.section5img2?.url} alt={post.acf?.section5img2?.alt}></img>
+            </div>) 
+            : ""}
+
+            {post.acf?.section6grid ? 
+            (<div className="sectionImage sectionGrid">
+                <img src={post.acf?.section6grid?.url} alt={post.acf?.section6grid?.alt}></img>
+                <img src={post.acf?.section6grid2?.url} alt={post.acf?.section6grid2?.alt}></img>
+                <img src={post.acf?.section6grid3?.url} alt={post.acf?.section6grid3?.alt}></img>
+                <img src={post.acf?.section6grid4?.url} alt={post.acf?.section6grid4?.alt}></img>
             </div>) 
             : ""}
 
