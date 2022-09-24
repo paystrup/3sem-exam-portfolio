@@ -166,10 +166,18 @@ a{
   text-decoration: none;
   border-radius: 50%;
   opacity: 0.5;
+  transition: 1s ease;
 }
 
 .scrollToTop svg{
   height: 30px;
+}
+
+.scrollToTop button:hover{
+  background-color: white;
+  opacity: 0.8;
+  color: black;
+  transition: 0.3s ease;
 }
 
 nav{
@@ -545,18 +553,35 @@ nav ul a:hover{
 
 /*--------------------- footer ---------------------*/
 footer{
-  display: flex;
-  justify-content: space-between;
   padding-top: 10rem;
   padding-left: 10rem;
   padding-right: 10rem;
-  padding-bottom: 25rem;
-  height: 50vh;
+  padding-bottom: 5rem;
+  background-color: black;
+  color: white;
 }
 
 .footerRight{
   display: flex;
-  gap: 13rem;
+  width: 40%;
+  justify-content: space-between;
+}
+
+.footerTop{
+  display: flex;
+  justify-content: space-between;
+  padding-bottom: 10rem;
+}
+
+.footerBottom{
+  display: flex;
+  justify-content: space-between;
+  padding-top: 2rem;
+}
+
+.footerBottom p{
+  color: var(--darkgrey);
+
 }
 
 footer h2{
@@ -578,32 +603,31 @@ footer h3{
   flex-direction: column;
   gap: 0.3rem;
   list-style-type: none;
+  color: var(--darkgrey);
 }
 
 .footerCTA svg{
   height: 3rem;
+  color: white;
 }
 
 .footerCTA a{
+  color: var(--darkgrey);
   display: flex;
   align-items: center;
   gap: 1rem;
   font-size: 3rem;
   font-weight: 800;
-  line-height: 1.2;
+  line-height: 1.66;
   text-underline-offset: 0.8rem;
-  color: black;
   text-decoration: underline;
-
 }
 
 .footerLinks a{
-  text-decoration: none;
-  color: black;
-}
-
-.footerLinks a span{
-  color: blue;
+  color: var(--darkgrey);
+  line-height: 1.66;
+  text-decoration: underline;
+  text-underline-offset: 3px;
 }
 
 .footerLinks a:hover{
@@ -625,11 +649,19 @@ footer h3{
   background-color: black;
 }
 
+.stripe3{
+  display: block;
+  width: 100%;
+  height: 1px;
+  background-color: var(--darkgrey);
+}
+
 /* --------------- all project pages ---------------*/
 .allProjectsPage{
   padding-top: 15rem;
   padding-left: 8rem;
   padding-right: 8rem;
+  padding-bottom: 10rem;
 }
 
 .allProjectsPage h1{
