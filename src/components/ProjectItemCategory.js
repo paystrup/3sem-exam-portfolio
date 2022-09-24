@@ -22,7 +22,7 @@ export default function ProjectItem({ project }) {
             duration: 0.4,
             ease: "Expo.easeIn",
             filter: 'grayscale(100%)',
-            paused: true
+            paused: true,
         });
     }, []);
 
@@ -42,8 +42,9 @@ export default function ProjectItem({ project }) {
             onMouseLeave={onMouseLeaveHandler}
             onClick={() => navigate("/projects/" + project.slug)}
         >
-            <div className="categoryImage"></div>
-            <img ref={elRef} src={image} alt={project.title.rendered} className="categoryImage"/>
+            <div className="categoryImageContainer">
+                <img ref={elRef} src={image} alt={project.title.rendered} className="categoryImage"/>
+            </div>
             <div className="projectItemText">
                 <h2>{project.acf?.case}</h2>
                 <h3>{project.acf?.date}</h3>

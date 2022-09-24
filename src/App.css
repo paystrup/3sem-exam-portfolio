@@ -790,6 +790,15 @@ footer h3{
   line-height: 1.66;
 }
 
+.projectIntro li{
+  padding-top: 1.5rem;
+  line-height: 1.66;
+  font-weight: 500;
+  font-family: 'Manrope', sans-serif;
+  font-size: 1.1rem;
+  color: var(--dark);
+}
+
 .projectIntro a{
   font-family: 'Manrope', sans-serif;
   text-decoration: underline;
@@ -1094,6 +1103,11 @@ footer h3{
   max-width: 100%;
   height: auto;
   border-radius: 25px;
+}
+
+.categoryImageContainer{
+  display: inline-block;
+  overflow: hidden;  
 }
 
 .projectItemCategory:hover{

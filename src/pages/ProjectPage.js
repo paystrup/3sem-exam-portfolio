@@ -162,6 +162,12 @@ export default function PostPage() {
             </div>) 
             : ""}
 
+            {post.acf?.section5img3 ? 
+            (<div className="sectionImage">
+                <img src={post.acf?.section5img3?.url} alt={post.acf?.section5img3?.alt}></img>
+            </div>) 
+            : ""}
+
             {post.acf?.section6grid ? 
             (<div className="sectionImage sectionGrid">
                 <img src={post.acf?.section6grid?.url} alt={post.acf?.section6grid?.alt}></img>
@@ -203,7 +209,13 @@ export default function PostPage() {
             </div>) 
             : ""}
 
-           
+            {post.acf?.jollyvid2 ? 
+            (<div className="sectionImage">
+                <video loop autoPlay muted>
+                    <source src={post.acf?.jollyvid2?.url} type="video/webm" />
+                </video>
+            </div>) 
+            : ""}
 
             
         </section>
