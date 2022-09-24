@@ -815,6 +815,10 @@ footer h3{
   padding-bottom: 9rem;
 }
 
+.projectEmbed video{
+  max-height: 750px;
+}
+
 .projectGallery{
   width: 100%;
   display: flex;

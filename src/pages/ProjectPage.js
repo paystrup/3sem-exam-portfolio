@@ -68,6 +68,7 @@ export default function PostPage() {
             (<div className="projectIntro downloads">
                 <div dangerouslySetInnerHTML={{ __html: post.acf?.download}}></div>
                 <div dangerouslySetInnerHTML={{ __html: post.acf?.download2}}></div>
+                <div dangerouslySetInnerHTML={{ __html: post.acf?.download3}}></div>
             </div>) 
             : ""}
 
@@ -214,6 +215,30 @@ export default function PostPage() {
                 <video loop autoPlay muted>
                     <source src={post.acf?.jollyvid2?.url} type="video/webm" />
                 </video>
+            </div>) 
+            : ""}
+
+            {post.acf?.section8 ? 
+            (<div className="projectIntro">
+                <div dangerouslySetInnerHTML={{ __html: post.acf?.section8}}></div>
+            </div>) 
+            : ""}
+
+            {post.acf?.instaembed2 ? 
+            (<div className="projectEmbed">
+                <InstagramEmbed url={post.acf?.instaembed2} width={500} />
+            </div>) 
+            : ""}
+
+            {post.acf?.section8img ? 
+            (<div className="sectionImage">
+                <img src={post.acf?.section8img?.url} alt={post.acf?.section8img?.alt}></img>
+            </div>) 
+            : ""}
+
+            {post.acf?.section9 ? 
+            (<div className="projectIntro">
+                <div dangerouslySetInnerHTML={{ __html: post.acf?.section9}}></div>
             </div>) 
             : ""}
 
