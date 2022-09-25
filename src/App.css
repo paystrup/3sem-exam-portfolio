@@ -19,6 +19,7 @@ html{
   --dark: #1c1d20;
   --grey: rgba(28, 29, 32, 0.175);
   --darkgrey: rgb(180, 180, 180);
+  --orange: #ff5408;
 }
 
 /* --------- scrollbar ----------- */
@@ -184,7 +185,7 @@ nav{
   display: flex;
   justify-content: space-between;
   align-items: center;
-  color: var(--dark);
+  color: #c2c2c2;
   padding-top: 1.5rem;
   padding-left: 4rem;
   padding-right: 4rem;
@@ -203,7 +204,7 @@ nav{
   display: flex;
   justify-content: space-between;
   align-items: center;
-  color: var(--dark);
+  color: #c2c2c2;
   padding-top: 1.5rem;
   padding-left: 4rem;
   padding-right: 4rem;
@@ -321,7 +322,7 @@ nav ul{
 
 nav ul a{
   text-decoration: none;
-  color: var(--dark);
+  color: rgb(155, 155, 155);
 }
 
 nav ul a:hover{
@@ -338,7 +339,7 @@ nav ul a:hover{
 }
 
 .active {
-  color: #c2c2c2;
+  color: var(--dark);
 }
 
 /* ------------------- landingpage ------------------------------------*/
@@ -411,6 +412,7 @@ nav ul a:hover{
 }
 
 .landingBoxUpper{
+  display: flex;
   transform: translateY(50px);
   opacity: 0;
 }
@@ -419,6 +421,7 @@ nav ul a:hover{
   color: black;
   transform: translateY(100px);
   opacity: 0;
+  z-index: 99;
 }
 
 .marqueeLanding img{
@@ -612,12 +615,12 @@ footer h3{
 }
 
 .footerCTA a{
-  color: var(--darkgrey);
+  color: white;
   display: flex;
   align-items: center;
   gap: 1rem;
   font-size: 3rem;
-  font-weight: 800;
+  font-weight: 500;
   line-height: 1.66;
   text-underline-offset: 0.8rem;
   text-decoration: underline;
@@ -695,7 +698,7 @@ footer h3{
   flex-wrap: wrap;
   justify-content: space-evenly;
   align-items: center;
-  gap: 5rem;
+  gap: 4rem;
   transform: translateY(120px);
   opacity: 0;
 }
@@ -928,13 +931,17 @@ footer h3{
   font-family: 'Manrope', sans-serif;
   font-size: 1.2rem;
   text-underline-offset: 0.4rem;
-  color: white;
+  color: var(--darkgrey);
+}
+
+.testimonialsHeader h2{
+  font-weight: 800;
 }
 
 .testimonialsHeader{
   display: flex;
   justify-content: space-between;
-  font-size: 1.5rem;
+  font-size: 1.8rem;
   color: white;
   padding-left: 15rem;
   padding-right: 15rem;
@@ -949,9 +956,20 @@ footer h3{
   opacity: 0.5;
 }
 
-.testimonialsHeaderLink{
-  transform: translateY(100px);
+.testimonialsLink{
+  transform: translateY(30px);
   opacity: 0;
+}
+
+.testimonialsHeaderLink{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 0.3rem;
+}
+
+.testimonialsHeaderLink svg{
+  height: 1.2rem;
 }
 
 .trigger{
@@ -959,7 +977,7 @@ footer h3{
 }
 
 .testimonialsHeader span{
-  font-weight: 300;
+  font-weight: 400;
 }
 
 .logoRow{
@@ -1000,6 +1018,19 @@ footer h3{
   padding-top: 13rem;
   padding-bottom: 10rem;
   line-height: 1.66;
+}
+
+.aboutImage{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+}
+
+.aboutImage img{
+  border-radius: 20px;
+  max-width: 30%;
 }
 
 .aboutSkills{
@@ -1047,14 +1078,16 @@ footer h3{
   width: 100%;
 }
 
-.aboutPageHeader p{
-  font-size: 1.4rem;
-  line-height: 1.66;
+.aboutPageHeaderBox img{
+  height: 2.5rem;
+  margin-right: 1rem;
+  animation: spin 5s linear infinite;
 }
 
-.aboutPageHeader img{
-  border-radius: 20px;
-  max-width: 50%;
+.aboutPageHeaderBox p{
+  text-indent: 20rem;
+  font-size: 3.8rem;
+  line-height: 1.66;
 }
 
 .aboutExperience{

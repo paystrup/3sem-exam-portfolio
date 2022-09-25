@@ -1,5 +1,5 @@
 import { NavLink } from "react-router-dom";
-import { ArrowLongRightIcon } from '@heroicons/react/24/solid'
+import { ArrowUpRightIcon } from '@heroicons/react/24/solid'
 
 export default function Footer() {
     // 🌅 date for footerBottom
@@ -13,11 +13,11 @@ export default function Footer() {
             <div className="footerTop">
                 <div className="footerCTA">
                     <h2>Let's work — together.</h2>
-                    <h2><a href="mailto:hello@paystrup.dk"><ArrowLongRightIcon />Get in touch</a></h2>
+                    <h2><a href="mailto:hello@paystrup.dk"><ArrowUpRightIcon />Get in touch </a></h2>
                 </div>
                 <div className="footerRight">
                     <div>
-                        <h3>Contact</h3>
+                        <h3>CONTACT</h3>
                         <ul className="footerLinks">
                             <li><a href="mailto:hello@paystrup.dk">hello@paystrup.dk</a></li>
                             
@@ -26,7 +26,7 @@ export default function Footer() {
                         </ul>    
                     </div>
                     <div>
-                        <h3>Sitemap</h3>
+                        <h3>SITEMAP</h3>
                         <ul className="footerLinks">
                             <li><li><a href="/">Home</a></li></li>
                             <li><NavLink to="/about">About</NavLink></li>
@@ -35,7 +35,7 @@ export default function Footer() {
                         
                     </div>
                     <div>
-                        <h3>Socials</h3>
+                        <h3>SOCIALS</h3>
                         <ul className="footerLinks">
                             <li><a target="_blank" rel="noreferrer" href="https://www.instagram.com/niko_paystrup/?hl=en">Instagram</a></li>
                             <li><a target="_blank" rel="noreferrer" href="https://github.com/paystrup">GitHub</a></li> 

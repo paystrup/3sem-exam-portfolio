@@ -39,12 +39,13 @@ export default function LandingPage() {
             </div>
             <div className="landingContainer">
                 <div className="landingBoxUpper">
-                    <h4>Digital artist and sound designer from Aarhus, Denmark. Currently studying Multimedia Design, specializing in Frontend Development.</h4>
-                    <div className="landingCTA">
-                        <ArrowDownRightIcon/>
-                        <a href="/#testimonials">EXPLORE MY PORTFOLIO BELOW</a>
+                    <div>
+                        <h4>Digital artist and sound designer from Aarhus, Denmark. Currently studying Multimedia Design, specializing in Frontend Development.</h4>
+                        <div className="landingCTA">
+                            <ArrowDownRightIcon/>
+                            <a href="/#testimonials">EXPLORE MY PORTFOLIO BELOW</a>
+                        </div>
                     </div>
-                    
                 </div>
                 <div className="marqueeLanding">
                     <BigTextMarquee text={LandingBigText} speed={speed}/>

@@ -89,23 +89,6 @@ export default function AboutPage() {
 
                     <div className="stripe2"></div>
 
-                    <div className="experienceRow">
-                        <div className="experienceRowContainer">
-                            <h4>THEORY</h4>
-                        </div>
-                        <div>
-                            <p>
-                                <b>Programming:</b> Semantic Code, SEO (Onpage), Best Coding Practices, Interface Architecture Maps, User Flow 
-
-                                <br></br><br></br><b>UX & Research:</b>  BMC, Card Sorting, Copywriting, Costumer Journey, Data Analysis, Golden Circle, Interface Architecture Maps, Lo-Fi & Hi-Fi Prototyping, Marketing Funnel, Onboarding, Personas, Research & Interview Techniques, SoMe Strategy, Staircase Model, Sweetspot, Tone Of Voice, Usability Tests, User Flow, VPC, Wireframing, Wireflow
-
-                                <br></br><br></br><b>Project Management & Strategy:</b> Agile & Waterfall Management, Concept Development & Prototyping, Double Diamond, Google Sprint, Offpage SEO, Project Management, User Generated Content
-
-                                <br></br><br></br><b>Graphic Design:</b> Content Development For SoMe, Design Theory (Psychology, Colors, Composition, Typography, Space), Digital & Analog Design Practices, Logo Design, Motion Graphics, Product Design, Software Knowledge, Video & Image Editing
-                            </p>
-                        </div>
-                    </div>
-
                     
                 </div>
             </div>
