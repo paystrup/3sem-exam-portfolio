@@ -2,7 +2,6 @@ import BigTextMarquee from "./BigTextMarquee"
 import { gsap } from "gsap";
 import { useEffect, useRef } from "react";
 import { ArrowDownRightIcon } from '@heroicons/react/24/solid'
-import LandingVideo from "../components/assets/test2.mp4"
 
 export default function LandingPage() {
     const el = useRef();
@@ -34,9 +33,6 @@ export default function LandingPage() {
 
     return (
         <section className="landingPage" ref={el}>
-            <div className="landingVideo">
-                {/* <video src={LandingVideo} type="video/mp4" autoPlay muted loop></video> */}
-            </div>
             <div className="landingContainer">
                 <div className="landingBoxUpper">
                     <div>

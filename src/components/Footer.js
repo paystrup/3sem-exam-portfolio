@@ -1,12 +1,40 @@
 import { NavLink } from "react-router-dom";
 import { ArrowUpRightIcon } from '@heroicons/react/24/solid'
+import { gsap } from "gsap";
+import { ScrollTrigger } from "gsap/ScrollTrigger";
+import { useEffect } from "react";
 
 export default function Footer() {
+    gsap.registerPlugin(ScrollTrigger);
+
     // 🌅 date for footerBottom
     const date = new Date();
     const n = date.toDateString();
     const time = date.toLocaleTimeString();
     const timeDate = n.toUpperCase() + time.toUpperCase();
+
+    useEffect(() => {
+        gsap.to(".footerCTA", {
+          y: 0,
+          opacity: 1,
+          duration: 1,
+          scrollTrigger: {
+            trigger: '.footerTop',
+            toggleActions: "restart none none none"
+          }
+        });
+
+        gsap.to(".footerRight", {
+            y: 0,
+            opacity: 1,
+            duration: 1,
+            delay: 0.5,
+            scrollTrigger: {
+                trigger: '.footerRight',
+                toggleActions: "restart none none none"
+            }
+        });
+    }, []);
 
     return (
         <footer>
@@ -46,7 +74,6 @@ export default function Footer() {
                     </div>
                 </div>
             </div>
-            <div className="stripe3"></div>
             <div className="footerBottom">
                 <p>ALL RIGHTS SERVED © 2022</p>
                 <p>PAYSTRUP / NIKOLAJ FRIIS PEJSTRUP</p>
