@@ -50,7 +50,7 @@ export default function AboutPageHeader() {
           </div>
           <div className="aboutPageHeaderLinks">
             <a className="mainBtn" href="https://www.linkedin.com/in/nikolajpejstrup/" target="_blank" rel="noopener noreferrer">LINKEDIN</a>
-            <a className="mainBtn" href="#" target="_blank" rel="noopener noreferrer">DOWNLOAD MY CV</a>
+            <a className="mainBtn" href="http://wordpress.paystrup.dk/wp-content/uploads/2022/09/Nikolaj-Friis-Pejstrup-CV2022.pdf" target="_blank" rel="noreferrer noopener"> DOWNLOAD MY CV</a>
           </div>
           
       </section>

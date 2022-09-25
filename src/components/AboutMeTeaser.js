@@ -32,7 +32,7 @@ export default function AboutMeTeaser() {
     }, []);
 
     return (
-        <section className="aboutMeTeaser">
+        <section className="aboutMeTeaser" id="aboutTeaser">
             <div className="aboutMeTeaserHeader"> 
                 <h4>I design and build solid user-centered experiences that help brands grow and stand out in both the digital and analog world.</h4>
                 <Link to="/about">

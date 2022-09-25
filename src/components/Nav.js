@@ -64,14 +64,13 @@ export default function Navigation() {
                                     <li onClick={() => setNav(false)}><NavLink to={path} key={id}>{name}</NavLink></li>
                                 )
                             })
+                            
                         }
                     </ul>
                 </div>)
 
                 : ""
             }
-           
-  
         </nav>
     )
 }
