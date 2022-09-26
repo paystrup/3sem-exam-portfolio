@@ -2393,6 +2393,10 @@ footer h3{
   .hireMeBox p{
     text-indent: 0rem;
   }
+
+  .bigTextContainer{
+    display: none;
+  }
 }
 
 
