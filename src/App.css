@@ -996,6 +996,7 @@ footer h3{
   gap: 10rem;
   justify-content: center;
   background-color: var(--bgdark);
+  padding-bottom: 12rem;
 }
 
 .testimonials2 i{
@@ -1339,6 +1340,48 @@ footer h3{
 .projectItemDate{
   display: flex;
   justify-content: space-between;
+}
+
+/* -------------- hire me landingpage --------------- */
+.hireMeBox{
+  padding-bottom: 1rem;
+}
+
+.hireMeBox img{
+  height: 2.5rem;
+  margin-right: 1rem;
+  animation: spin 3s linear infinite;
+}
+
+.hireMeLinks{
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 1rem;
+}
+
+.hireMe{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  gap: 2rem;
+  width: 100%;
+  padding-left: 5rem;
+  padding-right: 5rem;
+  background-color: var(--bgdark);
+}
+
+.hireMeBox p{
+  text-indent: 20rem;
+  font-size: 3.8rem;
+  line-height: 1.66;
+  color: white;
+  font-weight: 300;
+}
+
+.hireMeLinks a{
+  border: solid 2px white;
+  color: white;
 }
 
 /* RESPONSIVE BREAKPOINTS */
@@ -2308,6 +2351,20 @@ footer h3{
   .aboutMe h3{
     font-family: var(--header);
     font-size: 2rem;
+  }
+
+  /* HIRE ME */
+  .hireMe{
+    padding-left: 2rem;
+    padding-right: 2rem;
+  }
+  
+  .hireMeBox p{
+    text-indent: 0rem;
+    font-size: 3.8rem;
+    line-height: 1.66;
+    color: white;
+    font-weight: 300;
   }
 }
 

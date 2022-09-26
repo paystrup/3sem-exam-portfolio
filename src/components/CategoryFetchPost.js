@@ -3,6 +3,7 @@ import ProjectItemCategory from "./ProjectItemCategory";
 
 export default function CategoryFetchPost( { categoryID }) {
     const [projects, setProjects] = useState([]);
+    
 
     useEffect(() => {
         async function getData() {
