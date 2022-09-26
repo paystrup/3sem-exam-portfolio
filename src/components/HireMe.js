@@ -14,6 +14,5 @@ export default function HireMe() {
                 <a className="mainBtn" href="mailto:hello@paystrup.dk" target="_blank" rel="noreferrer noopener">SEND ME A MAIL</a>
             </div>
         </section>
-
     );
 }

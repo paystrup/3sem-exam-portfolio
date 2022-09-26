@@ -1,7 +1,7 @@
 // 📁 pages/AboutPage.js
 import AboutPageHeader from "../components/AboutPageHeader";
 import AboutMeDesc from "../components/AboutMeDesc";
-import AboutImage from "../components/assets/aboutpic1.png"
+import AboutImage from "../components/assets/aboutpic2.png"
 
 export default function AboutPage() {
     return (

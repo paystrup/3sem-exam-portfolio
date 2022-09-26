@@ -597,16 +597,6 @@ nav ul a:hover{
   transition: 0.7s ease;
 }
 
-/* -------------------- video section --------------------- */
-.videoSection{
-  width: 100%;
-  height: auto;
-}
-
-.videoSection video{
-  max-width: 100%;
-}
-
 /*--------------------- footer ---------------------*/
 footer{
   padding-top: 12rem;
@@ -1406,6 +1396,13 @@ footer h3{
     padding-left: 2rem;
     padding-right: 2rem;
   }
+
+  /* HIRE ME */
+  .hireMe{
+    padding-left: 2rem;
+    padding-right: 2rem;
+  }
+  
 }
 
 @media only screen and (max-width: 1280px) {
@@ -1719,6 +1716,13 @@ footer h3{
     font-family: var(--header);
     font-size: 2rem;
   }
+
+  /* HIRE ME */
+  .hireMe{
+    padding-left: 2rem;
+    padding-right: 2rem;
+  }
+  
 }
 
 @media screen and (max-width: 960px) {
@@ -2046,6 +2050,16 @@ footer h3{
     font-family: var(--header);
     font-size: 2rem;
   }
+
+  /* HIRE ME */
+  .hireMe{
+    padding-left: 2rem;
+    padding-right: 2rem;
+  }
+  
+  .hireMeBox p{
+    text-indent: 0rem;
+  }
 }
 
 @media screen and (max-width: 600px) {
@@ -2361,10 +2375,6 @@ footer h3{
   
   .hireMeBox p{
     text-indent: 0rem;
-    font-size: 3.8rem;
-    line-height: 1.66;
-    color: white;
-    font-weight: 300;
   }
 }
 
