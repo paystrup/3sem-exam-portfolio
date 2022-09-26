@@ -968,7 +968,7 @@ footer h3{
 }
 
 .sectionImage video{
-  max-width: 100%;
+  width: 100%;
   border-radius: 40px;
 }
 
@@ -1120,7 +1120,7 @@ footer h3{
 }
 
 .aboutImage img{
-  border-radius: 20px;
+  border-radius: 40px;
   max-width: 30%;
 }
 
@@ -1342,23 +1342,49 @@ footer h3{
 }
 
 /* RESPONSIVE BREAKPOINTS */
-@media screen and (max-width: 600px) {
+@media only screen and (max-width: 1600px) {
   nav{
     padding-left: 2rem;
     padding-right: 2rem;
-    color: var(--blk);
   }
-
-  .menuContainerMobile{
-    display: flex;
+  /* --------------------- LANDINGPAGE ---------------------- */
+  .landingPage{
+    padding-top: 8rem;
+    padding-bottom: 2rem;
+    height: 100vh;
   }
-
-  .menuLinksMobile{
-    display: flex;
+  
+  .landingImage{
+    padding-top: 8rem;
   }
+  
+  .landingBoxUpper{
+    flex-direction: row;
+    padding-left: 2rem;
+    padding-right: 2rem;
+  }
+}
 
-  .menuLinks{
-    display: none;
+@media only screen and (max-width: 1280px) {
+  nav{
+    padding-left: 2rem;
+    padding-right: 2rem;
+  }
+  /* --------------------- LANDINGPAGE ---------------------- */
+  .landingPage{
+    padding-top: 8rem;
+    padding-bottom: 2rem;
+    height: 100vh;
+  }
+  
+  .landingImage{
+    padding-top: 10rem;
+  }
+  
+  .landingBoxUpper{
+    flex-direction: row;
+    padding-left: 2rem;
+    padding-right: 2rem;
   }
 
   /* --------------------- LANDINGPAGE ---------------------- */
@@ -1369,7 +1395,7 @@ footer h3{
   }
   
   .landingImage{
-    padding-top: 23rem;
+    padding-top: 18rem;
   }
   
   .landingBoxUpper{
@@ -1392,6 +1418,10 @@ footer h3{
 
   .aboutMeTeaserHeader{
     gap: 2rem;
+  }
+
+  .aboutMeTeaser p{
+    max-width: 50%;
   }
 
   /* ------------------- selectedWorks ---------------- */
@@ -1431,7 +1461,7 @@ footer h3{
     padding-left: 2rem;
     padding-right: 2rem;
   }
-  
+
   .testimonialsHeaderLink{
     justify-content: flex-start;
   }
@@ -1975,26 +2005,23 @@ footer h3{
   }
 }
 
-@media only screen and (max-width: 1280px) {
+@media screen and (max-width: 600px) {
   nav{
     padding-left: 2rem;
     padding-right: 2rem;
+    color: var(--blk);
   }
-  /* --------------------- LANDINGPAGE ---------------------- */
-  .landingPage{
-    padding-top: 8rem;
-    padding-bottom: 2rem;
-    height: 100vh;
+
+  .menuContainerMobile{
+    display: flex;
   }
-  
-  .landingImage{
-    padding-top: 23rem;
+
+  .menuLinksMobile{
+    display: flex;
   }
-  
-  .landingBoxUpper{
-    flex-direction: column-reverse;
-    padding-left: 2rem;
-    padding-right: 2rem;
+
+  .menuLinks{
+    display: none;
   }
 
   /* --------------------- LANDINGPAGE ---------------------- */
@@ -2028,10 +2055,6 @@ footer h3{
 
   .aboutMeTeaserHeader{
     gap: 2rem;
-  }
-
-  .aboutMeTeaser p{
-    max-width: 100%;
   }
 
   /* ------------------- selectedWorks ---------------- */
@@ -2071,7 +2094,7 @@ footer h3{
     padding-left: 2rem;
     padding-right: 2rem;
   }
-
+  
   .testimonialsHeaderLink{
     justify-content: flex-start;
   }
@@ -2286,34 +2309,7 @@ footer h3{
     font-family: var(--header);
     font-size: 2rem;
   }
-
-
 }
 
-@media only screen and (max-width: 1600px) {
-      nav{
-        padding-left: 2rem;
-        padding-right: 2rem;
-      }
-      /* --------------------- LANDINGPAGE ---------------------- */
-      .landingPage{
-        padding-top: 8rem;
-        padding-bottom: 2rem;
-        height: 100vh;
-      }
-      
-      .landingImage{
-        padding-top: 23rem;
-      }
-      
-      .landingBoxUpper{
-        flex-direction: column-reverse;
-        padding-left: 2rem;
-        padding-right: 2rem;
-      }
-
-
-
-}
 
 

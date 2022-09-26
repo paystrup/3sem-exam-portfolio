@@ -12,7 +12,7 @@ export default function ProjectsPage() {
 
     useEffect(() => {
         async function getData() {
-            const response = await fetch("https://wordpress.paystrup.dk/wp-json/wp/v2/posts?_embed&per_page=20");
+            const response = await fetch("https://wordpress.paystrup.dk/wp-json/wp/v2/posts?_embed&per_page=30");
             const data = await response.json();
             setProjects(data);
         }

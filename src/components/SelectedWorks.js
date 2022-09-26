@@ -82,6 +82,7 @@ export default function SelectedWorks() {
                     {selectorIDs.map(selectorID => (
                             <button
                                 ref={buttonRef}
+                                key={selectorID.id}
                                 onClick={() => {setCategoryID(selectorID.categoryID);}}
                             >
                                 {selectorID.title}

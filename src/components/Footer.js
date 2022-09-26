@@ -55,11 +55,10 @@ export default function Footer() {
                     <div>
                         <h3>SITEMAP</h3>
                         <ul className="footerLinks">
-                            <li><li><a href="/">Home</a></li></li>
+                            <li><a href="/">Home</a></li>
                             <li><NavLink to="/about">About</NavLink></li>
                             <li><NavLink to="/projects">Projects</NavLink></li>                   
                         </ul>    
-                        
                     </div>
                     <div>
                         <h3>SOCIALS</h3>
