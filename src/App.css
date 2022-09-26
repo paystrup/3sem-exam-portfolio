@@ -1,44 +1,3 @@
-/* ---------- css reset / scroll settings ---------- */
-*{
-  margin: 0px;
-  padding: 0px;
-  box-sizing: border-box;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-rendering: optimizeLegibility;
-  -webkit-font-smoothing: antialiased;
-}
-
-html{
-  scroll-behavior: smooth;
-}
-
-/* ---------- root variables ---------- */
-:root {
-  --green: rgb(38, 76, 89);
-  --dark: #1c1d20;
-  --grey: rgba(28, 29, 32, 0.175);
-  --darkgrey: rgb(180, 180, 180);
-  --orange: #ff5408;
-}
-
-/* --------- scrollbar ----------- */
-::-webkit-scrollbar {
-  width: 7px;
-}
-
-::-webkit-scrollbar-track {
-  background: rgb(221, 221, 221); 
-}
-
-::-webkit-scrollbar-thumb {
-  background: rgb(34, 34, 34);
-}
-
-::-webkit-scrollbar-thumb:hover {
-  background: #555;
-}
-
 /* ------------------ fonts -----------------------*/
 
 @font-face {
@@ -121,9 +80,54 @@ html{
   font-display: swap;
 }
 
+/* ---------- css reset / scroll settings ---------- */
+*{
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+}
+
+html{
+  scroll-behavior: smooth;
+}
+
+/* ---------- root variables ---------- */
+:root {
+  --green: rgb(38, 76, 89);
+  --dark: #1c1d20;
+  --grey: rgba(28, 29, 32, 0.175);
+  --darkgrey: rgb(180, 180, 180);
+  --orange: #ff5408;
+  --text: 'Manrope', sans-serif;
+  --header: 'Druk Wide', sans-serif;
+  --blk: #000000;
+  --bgdark: #030303;
+}
+
+/* --------- scrollbar ----------- */
+::-webkit-scrollbar {
+  width: 7px;
+}
+
+::-webkit-scrollbar-track {
+  background: rgb(221, 221, 221); 
+}
+
+::-webkit-scrollbar-thumb {
+  background: rgb(34, 34, 34);
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #555;
+}
+
 /*--------- global settings --------*/
 h1, h2, h3, h4, h5, h6{
-  font-family: 'Manrope', sans-serif;
+  font-family: var(--text);
   font-weight: 600;
 }
 
@@ -132,13 +136,13 @@ h1{
 }
 
 p{
-  font-family: 'Manrope Medium', sans-serif;
+  font-family: var(--text);
   font-weight: 500;
   color: var(--dark);
 }
 
 a{
-  font-family: 'Manrope', sans-serif;
+  font-family: var(--text);
 }
 
 .mainBtn button:hover{
@@ -149,11 +153,11 @@ a{
 }
 
 .mainBtn{
-  font-family: 'Manrope', sans-serif;
+  font-family: var(--text);
   color: rgb(0, 0, 0);
   font-size: 1rem;
   font-weight: 800;
-  outline: solid 1.5px black;
+  outline: solid 1.5px var(--blk);
   padding-left: 2rem;
   padding-right: 2rem;
   padding-top: 0.7rem;
@@ -199,7 +203,7 @@ a{
 .scrollToTop button:hover{
   background-color: white;
   opacity: 0.8;
-  color: black;
+  color: var(--blk);
   transition: 0.3s ease;
 }
 
@@ -212,7 +216,7 @@ nav{
   padding-left: 4rem;
   padding-right: 4rem;
   padding-bottom: 1.5rem;
-  font-family: 'Manrope', sans-serif;
+  font-family: var(--text);
   font-weight: 600;
   font-size: 1.1rem;
   font-size: 16px;
@@ -231,7 +235,7 @@ nav{
   padding-left: 4rem;
   padding-right: 4rem;
   padding-bottom: 1.5rem;
-  font-family: 'Manrope', sans-serif;
+  font-family: var(--text);
   font-weight: 600;
   font-size: 1.1rem;
   font-size: 16px;
@@ -250,7 +254,7 @@ nav button{
   border-radius: 25px;
   padding: 10px 30px 10px 30px;
   color: white;
-  font-family: 'Manrope', sans-serif;
+  font-family: var(--text);
   font-weight: 500;
   font-size: 16px;
   border: none;
@@ -294,7 +298,7 @@ nav img:hover{
 }
 
 .menuLinksMobile a{
-  color: black;
+  color: var(--blk);
   font-size: 5rem;
 }
 
@@ -361,8 +365,8 @@ nav ul a:hover{
 }
 
 .page{
-  font-family: 'Manrope', sans-serif;
-  background-color: black;
+  font-family: var(--text);
+  background-color: var(--bgdark);
   padding-left: 5rem;
   padding-right: 5rem;
   color: white;
@@ -415,7 +419,7 @@ nav ul a:hover{
 }
 
 .landingBoxUpper h4{
-  color: black;
+  color: var(--blk);
   font-size: 1.2rem;
   font-weight: 500;
 }
@@ -465,7 +469,7 @@ nav ul a:hover{
 }
 
 .marqueeLanding{
-  color: black;
+  color: var(--blk);
   transform: translateY(100px);
   opacity: 0;
   z-index: 99;
@@ -478,7 +482,7 @@ nav ul a:hover{
 
 /* --------------------- about me teaser ----------------------*/
 .aboutMeTeaser{
-  background-color: black;
+  background-color: var(--bgdark);
   color: white;
   padding-top: 12rem;
   padding-bottom: 12rem;
@@ -509,7 +513,7 @@ nav ul a:hover{
 
 .aboutMeTeaser p{
   color: var(--darkgrey);
-  font-size: 1rem;
+  font-size: 1.2rem;
   line-height: 1.66;
   font-weight: 300;
   max-width: 40ch;
@@ -530,7 +534,7 @@ nav ul a:hover{
 }
 
 .selectedWorks{
-  background-color: black;
+  background-color: var(--bgdark);
   color: white;
 }
 
@@ -546,7 +550,7 @@ nav ul a:hover{
 }
 
 .selectedButtons{
-  font-family: 'Manrope', sans-serif;
+  font-family: var(--text);
   display: flex;
   gap: 1rem;
   padding-bottom: 2rem;
@@ -584,7 +588,7 @@ nav ul a:hover{
   font-size: 1rem;
   font-weight: 400;
   outline: solid 2px rgb(104, 104, 104);
-  background-color: black;
+  background-color: var(--bgdark);
   padding-left: 2rem;
   padding-right: 2rem;
   padding-top: 0.7rem;
@@ -609,7 +613,7 @@ footer{
   padding-left: 4rem;
   padding-right: 4rem;
   padding-bottom: 5rem;
-  background-color: black;
+  background-color: var(--bgdark);
   color: white;
 }
 
@@ -650,7 +654,7 @@ footer h3{
 }
 
 .footerLinks{
-  font-family: 'Manrope';
+  font-family: var(--text);
   font-weight: 500;
   display: flex;
   flex-direction: column;
@@ -704,7 +708,7 @@ footer h3{
   display: block;
   width: 100%;
   height: 1px;
-  background-color: black;
+  background-color: var(--blk);
 }
 
 .stripe3{
@@ -723,7 +727,7 @@ footer h3{
 }
 
 .allProjectsPage h1{
-  font-family: 'Druk Wide', sans-serif;
+  font-family: var(--header);
   font-size: 3.8rem;
   max-width: 15ch;
   text-align: center;
@@ -760,7 +764,7 @@ footer h3{
 
 .goBackButton a{
   font-size: 1.2rem;
-  color: black;
+  color: var(--blk);
 }
 
 .grid-container{
@@ -835,12 +839,13 @@ footer h3{
 }
 
 .projectPage h2{
-  font-family: 'Druk Wide', sans-serif;
+  font-family: var(--header);
   font-size: 3.8rem;
+  margin-top: -16px;
 }
 
 .projectPage h4{
-  font-family: 'Druk Wide', sans-serif;
+  font-family: var(--header);
 }
 
 .projectPageBoxRightLower{
@@ -849,7 +854,8 @@ footer h3{
 }
 
 .projectPage p{
-  font-weight: 200;
+  font-family: var(--text);
+  font-weight: 500;
   font-size: 1.1rem;
 }
 
@@ -870,6 +876,7 @@ footer h3{
   padding-left: 18rem;
   padding-right: 18rem;
   padding-top: 15rem;
+  opacity: 0;
 }
 
 .projectHeaderPic{
@@ -899,17 +906,17 @@ footer h3{
   padding-top: 1.5rem;
   line-height: 1.66;
   font-weight: 500;
-  font-family: 'Manrope', sans-serif;
+  font-family: var(--text);
   font-size: 1.1rem;
   color: var(--dark);
 }
 
 .projectIntro a{
-  font-family: 'Manrope', sans-serif;
+  font-family: var(--text);
   text-decoration: underline;
   font-weight: 600;
   font-size: 1.1rem;
-  color: black;
+  color: var(--blk);
   text-underline-offset: 0.2rem;
 }
 
@@ -967,7 +974,7 @@ footer h3{
 
 .downloads a{
   text-decoration: none;
-  color: black;
+  color: var(--blk);
   font-size: 1rem;
   font-weight: 700;
   outline: solid 2px rgb(104, 104, 104);
@@ -988,7 +995,7 @@ footer h3{
   flex-direction: column;
   gap: 10rem;
   justify-content: center;
-  background-color: black;
+  background-color: var(--bgdark);
 }
 
 .testimonials2 i{
@@ -997,7 +1004,7 @@ footer h3{
 }
 
 .testimonialsHeader a{
-  font-family: 'Manrope', sans-serif;
+  font-family: var(--text);
   font-size: 1.2rem;
   text-underline-offset: 0.4rem;
   color: var(--darkgrey);
@@ -1134,7 +1141,7 @@ footer h3{
 
 .aboutPage h2{
   font-size: 2rem;
-  font-family: 'Druk Wide', sans-serif;
+  font-family: var(--header);
 }
 
 .skillsetBox{
@@ -1226,7 +1233,7 @@ footer h3{
 }
 
 .aboutMe h3{
-  font-family: 'Druk Wide', sans-serif;
+  font-family: var(--header);
   font-size: 2rem;
 }
 
@@ -1255,12 +1262,12 @@ footer h3{
 
 .bigTextContainer h1{
   font-size: 13rem;
-  font-family: 'Druk Wide';
+  font-family: var(--header);
   font-weight: 400;
   letter-spacing: -0.2rem;
   color: transparent;
   -webkit-text-stroke-width: 2px;
-  -webkit-text-stroke-color: black;
+  -webkit-text-stroke-color: var(--blk);
 }
 
 /* ------------------ fetch from category --------------------- /*
@@ -1300,11 +1307,11 @@ footer h3{
 .projectItemCategory h2{
   font-size: 1.4rem;
   font-weight: 800;
-  font-family: 'Manrope', sans-serif;
+  font-family: var(--text);
 }
 
 .projectItemCategory h3{
-  font-family: 'Manrope', sans-serif;
+  font-family: var(--text);
   font-size: 1.4rem;
   font-weight: 400;
   color: var(--darkgrey);
@@ -1334,47 +1341,12 @@ footer h3{
   justify-content: space-between;
 }
 
-/* ----------- FEATUED PROJECTS - bottom projectpage.js ------------ */
-.featuredProjects .projectItemText h2{
-  font-family: 'Manrope', sans-serif;
-  font-size: 1.4rem;
-}
-
-.featuredProjects .projectItemText h3{
-  font-family: 'Manrope', sans-serif;
-  font-size: 1.4rem;
-  font-weight: 600;
-}
-
-.featuredProjects{
-  gap: 3rem;
-  display: flex;
-  flex-direction: column;
-
-  padding-left: 5rem;
-  padding-right: 5rem;
-  padding-bottom: 8rem;
-}
-
-.featuredProjects h2{
-  font-size: 2rem;
-}
-
-.featuredProjects .projectItem{
-  width: 31%;
-}
-
-.featuredProjectsGrid{
-  display: flex;
-  justify-content: space-between;
-}
-
 /* RESPONSIVE BREAKPOINTS */
 @media screen and (max-width: 600px) {
   nav{
     padding-left: 2rem;
     padding-right: 2rem;
-    color: black;
+    color: var(--blk);
   }
 
   .menuContainerMobile{
@@ -1671,7 +1643,7 @@ footer h3{
   }
   
   .aboutMe h3{
-    font-family: 'Druk Wide', sans-serif;
+    font-family: var(--header);
     font-size: 2rem;
   }
 }
@@ -1680,7 +1652,7 @@ footer h3{
   nav{
     padding-left: 2rem;
     padding-right: 2rem;
-    color: black;
+    color: var(--blk);
   }
 
   .menuContainerMobile{
@@ -1711,30 +1683,618 @@ footer h3{
     padding-left: 2rem;
     padding-right: 2rem;
   }
+
+  /* --------------------- LANDINGPAGE ---------------------- */
+  .landingPage{
+    padding-top: 8rem;
+    padding-bottom: 5rem;
+    height: 100vh;
+  }
+  
+  .landingImage{
+    padding-top: 23rem;
+  }
+  
+  .landingBoxUpper{
+    flex-direction: column-reverse;
+    padding-left: 2rem;
+    padding-right: 2rem;
+  }
+
+  /* --------------------- about me teaser ----------------------*/
+  .aboutMeTeaser{
+    padding-top: 8rem;
+    padding-bottom: 8rem;
+    padding-left: 2rem;
+    padding-right: 2rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    gap: 5rem;
+  }
+
+  .aboutMeTeaserHeader{
+    gap: 2rem;
+  }
+
+  .aboutMeTeaser p{
+    max-width: 100%;
+  }
+
+  /* ------------------- selectedWorks ---------------- */
+  .sectionWide{
+    padding-bottom: 10rem;
+    padding-left: 2rem;
+    padding-right: 2rem;
+  }
+
+  .selectedButtons{
+    flex-wrap: wrap;
+  }
+
+  .selectedHeader{
+    flex-direction: column-reverse;
+  }
+
+  .selectedHeader a{
+    padding-bottom: 2rem;
+  }
+
+  /* ----------------- CATEGORY FETCH ---------------------*/
+  .projectItemCategory{
+    max-width: 100%;
+  }
+
+  /* --------------- TESTIMONIALS --------------------------*/
+  .testimonials2{
+    padding-bottom: 8rem;
+    gap: 8rem;
+  }
+  
+  .testimonialsHeader{
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    padding-left: 2rem;
+    padding-right: 2rem;
+  }
+
+  .testimonialsHeaderLink{
+    justify-content: flex-start;
+  }
+
+  /* --------------- FOOTER ------------------------ */
+  footer{
+    padding-top: 5rem;
+    padding-left: 2rem;
+    padding-right: 2rem;
+  }
+  
+  .footerRight{
+    width: 100%;
+  }
+  
+  .footerTop{
+    gap: 5rem;
+    flex-direction: column;
+    justify-content: space-between;
+    padding-bottom: 5rem;
+  }
+  
+  footer h2{
+    font-size: 2.5rem;
+  }
+  
+  .footerCTA svg{
+    height: 2.5rem;
+  }
+  
+  .footerCTA a{
+    color: white;
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    font-size: 2.5rem;
+  }
+
+  /* ---------------- ALL PROJECTS --------------- */
+  .allProjectsPage{
+    padding-top: 8rem;
+    padding-left: 2rem;
+    padding-right: 2rem;
+    padding-bottom: 8rem;
+  }
+  
+  .allProjectsPage h1{
+    font-size: 3rem;
+  }
+  
+  .allProjectsPage p{
+    max-width: 100%;
+    font-size: 20px;
+  }
+  
+  .allProjectsPageHeader{
+    padding-bottom: 6rem;
+  }
+  
+  .projectItem{
+    display: flex;
+    width: 100%;
+    padding-bottom: 2rem;
+  }
+  
+  .projectItemText h2{
+    font-size: 1.8rem;
+  }
+  
+  .projectItemText h3{
+    font-size: 1.8rem;
+  }
+
+  /* ----------------- SINGLE PROJECT ---------------- */
+  .projectPageBoxLeft{
+    width: 100%;
+  }
+  
+  .projectPageBoxRight{
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+  }
+
+  .projectPageBoxRightLower{
+    justify-content: space-between;
+    gap: 4rem;
+  }
+  
+  .projectPage h2{
+    font-size: 3rem;
+  }
+  
+  .projectPageHeader{
+    flex-direction: column;
+    gap: 2rem;
+    padding-left: 2rem;
+    padding-right: 2rem;
+    padding-top: 8rem;
+  }
+  
+  .projectHeaderPic{
+    padding-left: 2rem;
+    padding-right: 2rem;
+    padding-top: 4rem;
+  }
+  
+  .projectHeaderPic img{
+    border-radius: 25px;
+  }
+  
+  .projectIntro{
+    padding-left: 2rem;
+    padding-right: 2rem;
+    padding-bottom: 9rem;
+  }
+  
+  .projectEmbed{
+    padding-bottom: 6rem;
+  }
+  
+  .projectEmbed video{
+    max-width: 100%;
+  }
+  
+  .sectionImage{
+    max-width: 100%;
+    padding-left: 2rem;
+    padding-right: 2rem;
+    padding-bottom: 6rem;
+  }
+
+  .sectionGrid{
+    flex-direction: column;
+    gap: 2rem;
+  }
+  
+  .downloads{
+    flex-wrap: wrap;
+    gap: 1rem;
+  }
+
+  .downloads a{
+    display: inline-block;
+  }
+  
+  .sectionGrid img{
+    max-width: 100%;
+  }
+
+  /* ------------------- about me page -------------------- */
+  .aboutPage{
+    padding-left: 2rem;
+    padding-right: 2rem;
+    padding-top: 8rem;
+    padding-bottom: 8rem;
+  }
+
+  .aboutImage img{
+    border-radius: 25px;
+    max-width: 80%;
+  }
+  
+  .aboutMeImage img{
+    border-radius: 25px;
+  }
+  
+  .aboutSkills{
+    flex-direction: column;
+  }
+
+  .skillsetBox{
+    width: 100%;
+  }
+  
+  .aboutPageHeaderBox img{
+    height: 1.5rem;
+    margin-right: 1rem;
+    animation: spin 3s linear infinite;
+  }
+  
+  .aboutPageHeaderBox p{
+    text-indent: 0rem;
+    font-size: 2rem;
+    line-height: 1.66;
+  }
+  
+  .experienceCol{
+    font-size: 1.2rem;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+  }
+  
+  .experienceRow{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 3rem;
+  }
+  
+  .aboutMe{
+    flex-direction: column;
+    padding-bottom: 8rem;
+  }
+  
+  .aboutMe p{
+    max-width: 100%;
+  }
+  
+  .aboutMe h3{
+    font-family: var(--header);
+    font-size: 2rem;
+  }
 }
 
 @media only screen and (max-width: 1280px) {
-    /* --------------------- LANDINGPAGE ---------------------- */
-    .landingPage{
-      padding-top: 8rem;
-      padding-bottom: 2rem;
-      height: 100vh;
-    }
-    
-    .landingImage{
-      padding-top: 23rem;
-    }
-    
-    .landingBoxUpper{
-      flex-direction: column-reverse;
-      padding-left: 2rem;
-      padding-right: 2rem;
-    }
+  nav{
+    padding-left: 2rem;
+    padding-right: 2rem;
+  }
+  /* --------------------- LANDINGPAGE ---------------------- */
+  .landingPage{
+    padding-top: 8rem;
+    padding-bottom: 2rem;
+    height: 100vh;
+  }
+  
+  .landingImage{
+    padding-top: 23rem;
+  }
+  
+  .landingBoxUpper{
+    flex-direction: column-reverse;
+    padding-left: 2rem;
+    padding-right: 2rem;
+  }
+
+  /* --------------------- LANDINGPAGE ---------------------- */
+  .landingPage{
+    padding-top: 8rem;
+    padding-bottom: 5rem;
+    height: 100vh;
+  }
+  
+  .landingImage{
+    padding-top: 23rem;
+  }
+  
+  .landingBoxUpper{
+    flex-direction: column-reverse;
+    padding-left: 2rem;
+    padding-right: 2rem;
+  }
+
+  /* --------------------- about me teaser ----------------------*/
+  .aboutMeTeaser{
+    padding-top: 8rem;
+    padding-bottom: 8rem;
+    padding-left: 2rem;
+    padding-right: 2rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    gap: 5rem;
+  }
+
+  .aboutMeTeaserHeader{
+    gap: 2rem;
+  }
+
+  .aboutMeTeaser p{
+    max-width: 100%;
+  }
+
+  /* ------------------- selectedWorks ---------------- */
+  .sectionWide{
+    padding-bottom: 10rem;
+    padding-left: 2rem;
+    padding-right: 2rem;
+  }
+
+  .selectedButtons{
+    flex-wrap: wrap;
+  }
+
+  .selectedHeader{
+    flex-direction: column-reverse;
+  }
+
+  .selectedHeader a{
+    padding-bottom: 2rem;
+  }
+
+  /* ----------------- CATEGORY FETCH ---------------------*/
+  .projectItemCategory{
+    max-width: 100%;
+  }
+
+  /* --------------- TESTIMONIALS --------------------------*/
+  .testimonials2{
+    padding-bottom: 8rem;
+    gap: 8rem;
+  }
+  
+  .testimonialsHeader{
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    padding-left: 2rem;
+    padding-right: 2rem;
+  }
+
+  .testimonialsHeaderLink{
+    justify-content: flex-start;
+  }
+
+  /* --------------- FOOTER ------------------------ */
+  footer{
+    padding-top: 5rem;
+    padding-left: 2rem;
+    padding-right: 2rem;
+  }
+  
+  .footerRight{
+    width: 100%;
+  }
+  
+  .footerTop{
+    gap: 5rem;
+    flex-direction: column;
+    justify-content: space-between;
+    padding-bottom: 5rem;
+  }
+  
+  footer h2{
+    font-size: 2.5rem;
+  }
+  
+  .footerCTA svg{
+    height: 2.5rem;
+  }
+  
+  .footerCTA a{
+    color: white;
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    font-size: 2.5rem;
+  }
+
+  /* ---------------- ALL PROJECTS --------------- */
+  .allProjectsPage{
+    padding-top: 8rem;
+    padding-left: 2rem;
+    padding-right: 2rem;
+    padding-bottom: 8rem;
+  }
+  
+  .allProjectsPage h1{
+    font-size: 3rem;
+  }
+  
+  .allProjectsPage p{
+    max-width: 100%;
+    font-size: 20px;
+  }
+  
+  .allProjectsPageHeader{
+    padding-bottom: 6rem;
+  }
+  
+  .projectItem{
+    display: flex;
+    width: 100%;
+    padding-bottom: 2rem;
+  }
+  
+  .projectItemText h2{
+    font-size: 1.8rem;
+  }
+  
+  .projectItemText h3{
+    font-size: 1.8rem;
+  }
+
+  /* ----------------- SINGLE PROJECT ---------------- */
+  .projectPageBoxLeft{
+    width: 100%;
+  }
+  
+  .projectPageBoxRight{
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+  }
+
+  .projectPageBoxRightLower{
+    justify-content: space-between;
+    gap: 4rem;
+  }
+  
+  .projectPage h2{
+    font-size: 3rem;
+  }
+  
+  .projectPageHeader{
+    flex-direction: column;
+    gap: 2rem;
+    padding-left: 2rem;
+    padding-right: 2rem;
+    padding-top: 8rem;
+  }
+  
+  .projectHeaderPic{
+    padding-left: 2rem;
+    padding-right: 2rem;
+    padding-top: 4rem;
+  }
+  
+  .projectHeaderPic img{
+    border-radius: 25px;
+  }
+  
+  .projectIntro{
+    padding-left: 2rem;
+    padding-right: 2rem;
+    padding-bottom: 9rem;
+  }
+  
+  .projectEmbed{
+    padding-bottom: 6rem;
+  }
+  
+  .projectEmbed video{
+    max-width: 100%;
+  }
+  
+  .sectionImage{
+    max-width: 100%;
+    padding-left: 2rem;
+    padding-right: 2rem;
+    padding-bottom: 6rem;
+  }
+
+  .sectionGrid{
+    flex-direction: column;
+    gap: 2rem;
+  }
+  
+  .downloads{
+    flex-wrap: wrap;
+    gap: 1rem;
+  }
+
+  .downloads a{
+    display: inline-block;
+  }
+  
+  .sectionGrid img{
+    max-width: 100%;
+  }
+
+  /* ------------------- about me page -------------------- */
+  .aboutPage{
+    padding-left: 2rem;
+    padding-right: 2rem;
+    padding-top: 8rem;
+    padding-bottom: 8rem;
+  }
+
+  .aboutImage img{
+    border-radius: 25px;
+    max-width: 80%;
+  }
+  
+  .aboutMeImage img{
+    border-radius: 25px;
+  }
+  
+  .aboutSkills{
+    flex-direction: column;
+  }
+
+  .skillsetBox{
+    width: 100%;
+  }
+  
+  .aboutPageHeaderBox img{
+    height: 1.5rem;
+    margin-right: 1rem;
+    animation: spin 3s linear infinite;
+  }
+  
+  .aboutPageHeaderBox p{
+    text-indent: 0rem;
+    font-size: 2rem;
+    line-height: 1.66;
+  }
+  
+  .experienceCol{
+    font-size: 1.2rem;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+  }
+  
+  .experienceRow{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 3rem;
+  }
+  
+  .aboutMe{
+    flex-direction: column;
+    padding-bottom: 8rem;
+  }
+  
+  .aboutMe p{
+    max-width: 100%;
+  }
+  
+  .aboutMe h3{
+    font-family: var(--header);
+    font-size: 2rem;
+  }
 
 
 }
 
 @media only screen and (max-width: 1600px) {
+      nav{
+        padding-left: 2rem;
+        padding-right: 2rem;
+      }
       /* --------------------- LANDINGPAGE ---------------------- */
       .landingPage{
         padding-top: 8rem;

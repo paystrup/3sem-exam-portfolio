@@ -1,8 +1,8 @@
 import { useState, useEffect } from "react";
 import { useParams, Link } from "react-router-dom";
-import parse from "html-react-parser";
 import { InstagramEmbed } from 'react-social-media-embed';
 import ScrollTopButton from "../components/ScrollTopButton";
+import ProjectPageHeader from "../components/ProjectPageHeader";
 
 export default function PostPage() {
     const [post, setPost] = useState({});
@@ -27,35 +27,12 @@ export default function PostPage() {
         image = post._embedded["wp:featuredmedia"][0].source_url;
     }
 
-
     // Messy code below, I know, I'm sorry. Without ACF pro it's not possbile to array images
     // -> a lot of custom keys 😥
     return (
         <section className="projectPage">
             <ScrollTopButton />
-            <section className="projectPageHeader">
-                <div className="projectPageBoxLeft">
-                    <h4>CASE</h4>
-                </div>
-                <article className="projectPageBoxRight">
-                    <h2>{post.title && parse(post.title.rendered)}</h2>
-                    <div className="projectPageBoxRightLower">
-                        <div className="ppDetails">
-                            <h6>CLIENT</h6>
-                            <p>{post.acf?.client}</p>
-                            
-                        </div>
-                        <div className="ppDetails">
-                            <h6>SERVICE</h6>
-                            <p>{post.acf?.service}</p>
-                        </div>
-                        <div className="ppDetails">
-                            <h6>DATE</h6>
-                             <p>{post.acf?.date}</p> 
-                        </div>
-                    </div>
-                </article>
-            </section>
+            <ProjectPageHeader post={post}/>
             <figure className="projectHeaderPic">
                 <img src={image} alt={post.title?.rendered} />
             </figure>
