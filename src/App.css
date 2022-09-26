@@ -165,6 +165,7 @@ a{
   border-radius: 25px;
   transition: 0.7s ease;
   text-align: center;
+  -webkit-appearance: none;
 }
 
 /*------------- navbar ---------------- */
@@ -595,6 +596,7 @@ nav ul a:hover{
   padding-bottom: 0.7rem;
   border-radius: 25px;
   transition: 0.7s ease;
+  -webkit-appearance: none;
 }
 
 /*--------------------- footer ---------------------*/
@@ -776,12 +778,12 @@ footer h3{
 }
 
 .projectItemText h2{
-  font-size: 2rem;
+  font-size: 1.5rem;
   font-weight: 800;
 }
 
 .projectItemText h3{
-  font-size: 2rem;
+  font-size: 1.5rem;
   font-weight: 400;
   color: rgb(107, 107, 107);
 }
@@ -863,8 +865,8 @@ footer h3{
 .projectPageHeader{
   display: flex;
   justify-content: center;
-  padding-left: 18rem;
-  padding-right: 18rem;
+  padding-left: 13rem;
+  padding-right: 13rem;
   padding-top: 15rem;
   opacity: 0;
 }
@@ -882,8 +884,8 @@ footer h3{
 }
 
 .projectIntro{
-  padding-left: 30rem;
-  padding-right: 30rem;
+  padding-left: 20rem;
+  padding-right: 20rem;
   padding-bottom: 9rem;
 }
 
@@ -891,6 +893,7 @@ footer h3{
   padding-top: 1.5rem;
   line-height: 1.66;
 }
+
 
 .projectIntro li{
   padding-top: 1.5rem;
@@ -954,6 +957,8 @@ footer h3{
 
 .downloads{
   display: flex;
+  flex-wrap: wrap;
+  line-height: 3;
   gap: 1rem;
 }
 
@@ -1296,20 +1301,20 @@ footer h3{
 }
 
 .projectItemCategory h2{
-  font-size: 1.4rem;
+  font-size: 1.6rem;
   font-weight: 800;
   font-family: var(--text);
 }
 
 .projectItemCategory h3{
   font-family: var(--text);
-  font-size: 1.4rem;
+  font-size: 1.6rem;
   font-weight: 400;
   color: var(--darkgrey);
 }
 
 .categoryTeaser h3{
-  font-size: 1.1rem;
+  font-size: 1rem;
 }
 
 .projectItemText p{
@@ -1678,14 +1683,14 @@ footer h3{
   }
   
   .aboutPageHeaderBox img{
-    height: 1.5rem;
+    height: 2rem;
     margin-right: 1rem;
     animation: spin 3s linear infinite;
   }
   
   .aboutPageHeaderBox p{
-    text-indent: 0rem;
-    font-size: 2rem;
+    text-indent: 5rem;
+    font-size: 3rem;
     line-height: 1.66;
   }
   
@@ -1902,11 +1907,11 @@ footer h3{
   }
   
   .projectItemText h2{
-    font-size: 1.8rem;
+    font-size: 1.5rem;
   }
   
   .projectItemText h3{
-    font-size: 1.8rem;
+    font-size: 1.5rem;
   }
 
   /* ----------------- SINGLE PROJECT ---------------- */
@@ -2012,14 +2017,14 @@ footer h3{
   }
   
   .aboutPageHeaderBox img{
-    height: 1.5rem;
+    height: 2rem;
     margin-right: 1rem;
     animation: spin 3s linear infinite;
   }
   
   .aboutPageHeaderBox p{
-    text-indent: 0rem;
-    font-size: 2rem;
+    text-indent: 3rem;
+    font-size: 3rem;
     line-height: 1.66;
   }
   
@@ -2085,7 +2090,7 @@ footer h3{
   .landingPage{
     padding-top: 8rem;
     padding-bottom: 5rem;
-    height: 100vh;
+    height: 113vh;
   }
   
   .landingImage{
@@ -2136,6 +2141,7 @@ footer h3{
   /* ----------------- CATEGORY FETCH ---------------------*/
   .projectItemCategory{
     max-width: 100%;
+    opacity: 1;
   }
 
   /* --------------- TESTIMONIALS --------------------------*/
@@ -2158,12 +2164,17 @@ footer h3{
 
   /* --------------- FOOTER ------------------------ */
   footer{
-    padding-top: 5rem;
+    padding-top: 8rem;
     padding-left: 2rem;
     padding-right: 2rem;
   }
   
   .footerRight{
+    gap: 2rem;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
     width: 100%;
   }
   
@@ -2173,7 +2184,12 @@ footer h3{
     justify-content: space-between;
     padding-bottom: 5rem;
   }
-  
+
+  .footerBottom p{
+    font-size: 0.7rem;
+  }
+
+ 
   footer h2{
     font-size: 2.5rem;
   }
@@ -2196,15 +2212,16 @@ footer h3{
     padding-left: 2rem;
     padding-right: 2rem;
     padding-bottom: 8rem;
+    flex-wrap: wrap;
   }
   
   .allProjectsPage h1{
-    font-size: 3rem;
+    font-size: 2.5rem;
   }
   
   .allProjectsPage p{
     max-width: 100%;
-    font-size: 20px;
+    font-size: 15px;
   }
   
   .allProjectsPageHeader{
@@ -2218,11 +2235,11 @@ footer h3{
   }
   
   .projectItemText h2{
-    font-size: 1.8rem;
+    font-size: 1.2rem;
   }
   
   .projectItemText h3{
-    font-size: 1.8rem;
+    font-size: 1.2rem;
   }
 
   /* ----------------- SINGLE PROJECT ---------------- */
@@ -2242,7 +2259,7 @@ footer h3{
   }
   
   .projectPage h2{
-    font-size: 3rem;
+    font-size: 2.5rem;
   }
   
   .projectPageHeader{

@@ -25,7 +25,10 @@ export default function AboutMeDesc() {
         <section className="aboutMe" ref={el}>
             <h3>ABOUT ME</h3>
             <p>
-                I'm Nikolaj. A Digital Artist, Sound Designer and Multimedia Design Student from Aarhus, Denmark - currently specializing in Frontend Development. I love italian food, art and football. I have a deep passion for creating solutions that dare to stand out, solutions that matter. I see myself as a person who is an enthusiastic creative, detail orientated, hard working and a fast learner.
+                I'm Nikolaj. A Digital Artist, Sound Designer and Multimedia Design Student from Aarhus, Denmark - currently specializing in Frontend Development. I love italian food, art and football. I have a deep passion for creating solutions that dare to stand out, solutions that matter. 
+                <br></br>
+                <br></br>
+                I see myself as a person who is an enthusiastic creative, detail orientated, hard working and a fast learner. I always challenge myself, and strive to deliver the best job possible no matter what. I have great communication skills, and I’m a teamplayer motivated by teamwork, sparring and great results. I’m a competetive person and I always aspire to do better.
                 <br></br>
                 <br></br>
                 The latest 6 years I've worked freelance and helped international brands by creating experiences through the combination of graphic design, 3D, motion graphics and sound. I've been blessed to work with brands such as Puma, Universal Music, Sony Music, Warner Music, Depop, Splice and many more...

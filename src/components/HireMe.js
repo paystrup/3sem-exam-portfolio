@@ -6,7 +6,7 @@ export default function HireMe() {
         <section className="hireMe">
             <div className="hireMeBox">
                 <p>
-                    <img src={payicon} alt="Paystrup Icon"></img> I'm looking for an internship Q1 2023 in Aarhus, can I help your team create ship cool experiences? I like Frontend Development, Graphic Design, UX/UI.
+                    <img src={payicon} alt="Paystrup Icon"></img> I'm looking for an internship Q1 2023 in Aarhus. Can I help your team create cool experiences? I like Frontend Development, Graphic Design, UX/UI.
                 </p>
             </div>
             <div className="hireMeLinks">
