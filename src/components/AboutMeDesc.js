@@ -28,7 +28,7 @@ export default function AboutMeDesc() {
                 I'm Nikolaj. A Digital Artist, Sound Designer and Multimedia Design Student from Aarhus, Denmark - currently specializing in Frontend Development. I love italian food, art and football. I have a deep passion for creating solutions that dare to stand out, solutions that matter. I see myself as a person who is an enthusiastic creative, detail orientated, hard working and a fast learner.
                 <br></br>
                 <br></br>
-                The latest 8 years I've worked freelance and helped international brands by creating experiences through the combination of graphic design, 3D, motion graphics and sound. I've been blessed to work with brands such as Puma, Universal Music, Sony Music, Warner Music, Depop, Splice and many more...
+                The latest 6 years I've worked freelance and helped international brands by creating experiences through the combination of graphic design, 3D, motion graphics and sound. I've been blessed to work with brands such as Puma, Universal Music, Sony Music, Warner Music, Depop, Splice and many more...
                 <br></br>
                 <br></br>
                 I've always wanted to use my competences to create interactive experiences, and this lead me to studying Multimedia Design at Business Academy Aarhus in 2021. This has enabled me to combine my previous competences about graphic design, motion design and sound design with programming to create cool web experiences. 

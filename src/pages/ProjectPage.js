@@ -1,5 +1,5 @@
 import { useState, useEffect } from "react";
-import { useParams } from "react-router-dom";
+import { useParams, Link } from "react-router-dom";
 import parse from "html-react-parser";
 import { InstagramEmbed } from 'react-social-media-embed';
 import ScrollTopButton from "../components/ScrollTopButton";
@@ -242,6 +242,9 @@ export default function PostPage() {
             </div>) 
             : ""}
 
+            <div className="goBackButton">
+                <Link to="/projects" className="mainBtn">GO BACK TO ALL PROJECTS</Link>
+            </div>
             
         </section>
     );

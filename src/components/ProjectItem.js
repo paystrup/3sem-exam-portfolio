@@ -8,7 +8,7 @@ export default function ProjectItem({ project }) {
 
     // if embedded image is available redefine image to the wp url
     if (project._embedded && project._embedded["wp:featuredmedia"]) {
-        image = project._embedded["wp:featuredmedia"][0].source_url;
+        image = project._embedded["wp:featuredmedia"][0]?.source_url;
     }
 
     // props imported from fetch via -> ./pages/ProjectsPage.js
@@ -16,8 +16,8 @@ export default function ProjectItem({ project }) {
         <article className="projectItem" onClick={() => navigate(project.slug)}>
             <img src={image} alt={project.title.rendered} />
             <div className="projectItemText">
-                <h2>{project.acf.case}</h2>
-                <h3>{project.acf.date}</h3>
+                <h2>{project.acf?.case}</h2>
+                <h3>{project.acf?.date}</h3>
             </div>
         </article>
     );

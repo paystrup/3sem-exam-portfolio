@@ -48,7 +48,6 @@ export default function Footer() {
                         <h3>CONTACT</h3>
                         <ul className="footerLinks">
                             <li><a href="mailto:hello@paystrup.dk">hello@paystrup.dk</a></li>
-                            
                             <li><a href="tel:+4528730214">+45 2873 0214</a></li>
                             <li>Denmark, Aarhus C</li>                 
                         </ul>    

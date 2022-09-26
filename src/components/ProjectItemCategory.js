@@ -24,6 +24,9 @@ export default function ProjectItem({ project }) {
             filter: 'grayscale(100%)',
             paused: true,
         });
+        gsap.to(".projectItemCategory", {
+            opacity: 1
+        });
     }, []);
 
     const onMouseEnterHandler = () => {

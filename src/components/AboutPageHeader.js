@@ -1,4 +1,4 @@
-import headerImage from "../components/assets/personal4.png"
+import headerImage from "../components/assets/personal3.png"
 import payicon from "../components/assets/payicon.svg"
 import { gsap } from "gsap";
 import { useEffect, useRef } from "react";

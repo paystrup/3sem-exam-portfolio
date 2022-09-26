@@ -52,7 +52,7 @@ export default function Navigation() {
                             )
                         })
                     }
-                    <li><NavLink to="/contact"><button>Get in touch</button></NavLink></li>
+                    <li><a href="mailto:hello@paystrup.dk"><button>Get in touch</button></a></li>
                 </ul>
             </div>
             {nav ? 
