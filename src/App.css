@@ -2255,7 +2255,8 @@ footer h3{
 
   .projectPageBoxRightLower{
     justify-content: space-between;
-    gap: 4rem;
+    flex-wrap: wrap;
+    gap: 2rem;
   }
   
   .projectPage h2{
