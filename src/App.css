@@ -2397,6 +2397,11 @@ footer h3{
   .bigTextContainer{
     display: none;
   }
+
+  .aboutPage h2{
+    font-size: 1.5rem;
+    padding-bottom: 2rem;
+  }
 }
 
 
